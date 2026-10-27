@@ -1,0 +1,32 @@
+baseURL = "https://aominhtam.github.io/fcaj-workshop-template/"
+languageCode = "vi"
+defaultContentLanguage = "vi"
+defaultContentLanguageInSubdir = false
+title = "Báo cáo thực tập FCAJ - Ao Minh Tâm"
+theme = "hugo-theme-learn"
+
+[params]
+  themeVariant = "workshop"
+  description = "Workforce Bootcamp - First Cloud AI Journey (FCAJ) Internship Portfolio"
+  author = "Ao Minh Tâm"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+
+[Languages]
+[Languages.vi]
+  title = "Báo cáo thực tập FCAJ"
+  weight = 1
+  languageName = "Tiếng Việt"
+  landingPageName = "<i class='fas fa-home'></i> Trang chủ"
+
+[Languages.en]
+  title = "FCAJ Internship Report"
+  weight = 2
+  languageName = "English"
+  landingPageName = "<i class='fas fa-home'></i> Home"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
