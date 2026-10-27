@@ -1,0 +1,16 @@
+# Hugo default output
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE & Editor files
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
