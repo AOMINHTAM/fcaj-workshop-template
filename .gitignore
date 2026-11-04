@@ -14,3 +14,7 @@ ehthumbs.db
 .idea/
 *.swp
 *.swo
+
+# Local agent notes
+PROJECT_STATE.md
+
