@@ -1,4 +1,4 @@
----
+﻿---
 title: "Worklog Tuần 4"
 weight: 4
 chapter: false
@@ -13,7 +13,7 @@ pre: " <b> 1.4. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | :---: | :--- | :---: | :---: | :--- |
-| **Thứ 2** | - Nghiên cứu kiến trúc **Medallion Data Lake** (`Bronze` $\rightarrow$ `Silver` $\rightarrow$ `Gold`) trên Amazon S3 <br> - Khởi tạo S3 Bucket phân tầng (`bronze-raw/`, `silver-cleaned/`, `gold-curated/`), bật **Block Public Access** và mã hóa **SSE-KMS** | 19/10/2026 | 19/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 2** | - Nghiên cứu kiến trúc **Medallion Data Lake** (`Bronze` → `Silver` → `Gold`) trên Amazon S3 <br> - Khởi tạo S3 Bucket phân tầng (`bronze-raw/`, `silver-cleaned/`, `gold-curated/`), bật **Block Public Access** và mã hóa **SSE-KMS** | 19/10/2026 | 19/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
 | **Thứ 3** | - Cấu hình **S3 Lifecycle Rules** tự động chuyển dữ liệu tầng Bronze sang `S3 Standard-IA` sau 30 ngày và lưu trữ lạnh `S3 Glacier Flexible Retrieval` sau 90 ngày <br> - Tải tập dữ liệu mẫu định dạng CSV/JSON và Apache Parquet phân vùng (`year=YYYY/month=MM`) lên S3 | 20/10/2026 | 20/10/2026 | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html> |
 | **Thứ 4** | - Khởi tạo cơ sở dữ liệu trên **AWS Glue Data Catalog** <br> - Cấu hình IAM Role cho Glue và chạy **AWS Glue Crawler** tự động quét S3, suy luận kiểu dữ liệu và nhận diện các cột phân vùng (Partitions) | 21/10/2026 | 21/10/2026 | <https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html> |
 | **Thứ 5** | - Cấu hình **Amazon Athena** với S3 Query Result Bucket (kèm Lifecycle tự xóa sau 7 ngày) <br> - Viết các câu lệnh SQL tổng hợp, lọc theo phân vùng trực tiếp trên dữ liệu S3 thông qua Glue Data Catalog | 22/10/2026 | 22/10/2026 | <https://docs.aws.amazon.com/athena/latest/ug/what-is.html> |

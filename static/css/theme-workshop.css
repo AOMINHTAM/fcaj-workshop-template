@@ -152,6 +152,7 @@ table {
   overflow: hidden;
   margin: 1.15rem 0 1.5rem 0;
   font-size: 0.94rem;
+  table-layout: auto;
 }
 
 th {
@@ -161,6 +162,7 @@ th {
   padding: 0.7rem 0.9rem !important;
   border: 1px solid #3b5374 !important;
   text-align: left;
+  white-space: nowrap;
 }
 
 td {
@@ -168,7 +170,35 @@ td {
   border: 1px solid #e2e8f0 !important;
   color: #2d3748;
   vertical-align: top;
-  line-height: 1.6;
+  line-height: 1.65;
+}
+
+/* Column proportion tuning for 5-column Daily Worklog tables */
+table th:nth-child(1),
+table td:nth-child(1) {
+  white-space: nowrap;
+  text-align: center;
+  width: 1%;
+}
+
+table td:nth-child(2) {
+  min-width: 340px;
+  width: 54%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3),
+table th:nth-child(4),
+table td:nth-child(4) {
+  white-space: nowrap;
+  text-align: center;
+  width: 1%;
+}
+
+table td:nth-child(5) {
+  width: 24%;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 tr:nth-child(even) td {
@@ -181,13 +211,13 @@ code, kbd, pre, samp {
 }
 
 code {
-  font-size: 0.86em !important;
+  font-size: 0.85em !important;
   color: #1e293b !important;
   background: #f1f5f9 !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 4px !important;
   padding: 0.1rem 0.35rem !important;
-  white-space: normal;
+  white-space: nowrap !important;
 }
 
 code + .copy-to-clipboard {
