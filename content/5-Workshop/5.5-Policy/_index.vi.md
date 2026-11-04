@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.5 Thiết lập Bucket Policy & IAM Access Control"
 weight: 5
+chapter: false
+pre: " <b> 5.5. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

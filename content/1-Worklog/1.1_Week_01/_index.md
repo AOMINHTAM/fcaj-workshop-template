@@ -1,29 +1,26 @@
 ---
-title: "Week 1: Bootcamp Onboarding, Account Workaround & $200 Credit Strategy"
+title: "Week 1 Worklog"
 weight: 1
+chapter: false
+pre: " <b> 1.1. </b> "
 ---
 
-### 🇬🇧 Week 01 Worklog
+### Week 1 Objectives:
+* Attend the **Workforce Bootcamp - First Cloud AI Journey (FCAJ)** Kick-off event, understand program regulations, deliverables, and align with the **Data & Analytics** track.
+* Set up an AWS Free Tier account, resolve identity verification blockers, and complete the **Explore AWS** tasks to unlock **$200 in AWS Credits**.
+* Establish **FinOps** cost guardrails using **AWS Budgets** with 4 automated alert thresholds.
 
-**1. Tasks Completed:**
-- Attended the **Workforce Bootcamp - First Cloud AI Journey (FCAJ) Kick-off Event** on Saturday (26/09/2026). Onboarded onto program regulations and committed to the **Data & Analytics** track.
-- Registered an AWS Free Tier account; encountered automated verification failure on SMS OTP and voice calls.
-- Opened an AWS Support ticket (Case ID: `179040404500475`) requesting manual verification via billing card statement.
-- Proactively borrowed an activated AWS account from a friend to ensure hands-on lab progress remained uninterrupted.
-- Executed the 5 hands-on activities under the **Explore AWS** console widget to earn an additional $100 credit, bringing the account to **$200 Total Promotional Credit**:
-  - **Task 1 (EC2):** Launched a sample EC2 instance (`first-kp.pem`, t2/t3.micro) and executed clean termination ($20 credit).
-  - **Task 2 (Bedrock):** Explored AI Foundation Models (Claude Haiku / Titan) in Bedrock Playground ($20 credit).
-  - **Task 3 (AWS Budgets):** Provisioned initial baseline cost tracking ($20 credit).
-  - **Task 4 (Lambda):** Deployed a serverless web function (`http-function-url-tutorial`) with a public Function URL and cleaned up ($20 credit).
-  - **Task 5 (RDS):** Provisioned an Amazon Aurora PostgreSQL database and completed two-tier resource cleanup ($20 credit).
-- Scaled **AWS Budgets** to track the total **$200 allocation** with a 4-tier alerting matrix (12.5% - $25, 25% - $50, 50% - $100, 75% - $150) routed to personal email to enforce strict FinOps guardrails.
+### Tasks to be carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
+| :---: | :--- | :---: | :---: | :--- |
+| **Sat (Kick-off)** | - Attend **FCAJ Workforce Bootcamp Kick-off** <br> - Review internship rules, evaluation criteria, and the 12-week roadmap | 26/09/2026 | 26/09/2026 | <https://hcm-rules.awsfcaj.com/> |
+| **Mon (Day 2)** | - Register personal AWS Free Tier account <br> - Open **AWS Support** ticket (Case ID: `179040404500475`) for manual verification and arrange a verified backup account to maintain schedule | 28/09/2026 | 28/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Tue (Day 3)** | - Execute **Explore AWS** credit tasks (Part 1): <br>&emsp; + **Task 1 (EC2):** Launch `t2/t3.micro` instance (`first-kp.pem`) and safely terminate (+\$20) <br>&emsp; + **Task 2 (Amazon Bedrock):** Test Text Playground with Claude Haiku / Titan (+\$20) | 29/09/2026 | 29/09/2026 | <https://aws.amazon.com/free/> |
+| **Wed (Day 4)** | - Execute **Explore AWS** credit tasks (Part 2): <br>&emsp; + **Task 3 (AWS Budgets):** Configure initial cost budget (+\$20) <br>&emsp; + **Task 4 (AWS Lambda):** Deploy `http-function-url-tutorial` blueprint and clean up (+\$20) | 30/09/2026 | 30/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thu - Fri (Day 5-6)** | - Complete **Task 5 (Amazon RDS):** Provision Aurora PostgreSQL cluster and perform 2-tier clean-up (DB Instance & Cluster) (+\$20) <br> - Upgrade **AWS Budgets** to a **\$200** master budget with 4 email alert tiers (`12.5% - $25`, `25% - $50`, `50% - $100`, `75% - $150`) | 01/10/2026 | 02/10/2026 | <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html> |
 
-**2. Key Deliverables & Results:**
-- Resolved account onboarding blockers with zero downtime to the bootcamp roadmap.
-- Successfully earned and validated $200 AWS Credit balance under Billing & Cost Management.
-- Deployed a multi-threshold budget alarm protecting the borrowed account throughout the 6-month journey.
-
-**3. References:**
-- FCAJ Lab Guide: Explore AWS Services & AWS Free Tier Strategy ($200 Credit).
-- AWS Billing & Cost Management: Managing your costs with AWS Budgets.
-- AWS Knowledge Center: Manual Account Verification Troubleshooting.
+### Week 1 Achievements:
+* Proactively handled account verification issues via AWS Support without delaying hands-on progress.
+* Completed all 5 **Explore AWS** tasks and verified the full **\$200 Credit** balance in the Billing Console.
+* Deployed a **4-tier AWS Budgets FinOps guardrail** protecting the account against unexpected charges.
+* Established strict **multi-layer resource clean-up habits** across EC2, Lambda, and RDS Aurora clusters.

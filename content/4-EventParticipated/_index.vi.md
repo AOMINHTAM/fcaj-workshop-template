@@ -1,9 +1,9 @@
----
+﻿---
 title: "Sự kiện tham gia"
 weight: 4
+chapter: false
+pre: " <b> 4. </b> "
 ---
-
-# 🎟️ Sự kiện đã tham gia (Events Participated)
 
 Phần này ghi lại các buổi hội thảo chuyên môn, hội nghị công nghệ và các sự kiện cộng đồng đã tham gia trong suốt quá trình thực tập.
 

@@ -1,6 +1,8 @@
----
+﻿---
 title: "Sự kiện 2: Sắp diễn ra"
 weight: 2
+chapter: false
+pre: " <b> 4.2. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

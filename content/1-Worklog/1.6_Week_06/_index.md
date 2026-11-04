@@ -1,38 +1,25 @@
 ---
-title: "Week 6: Kimball Star Schema Data Modeling & Data Quality Engineering with dbt Core"
+title: "Week 6 Worklog"
 weight: 6
+chapter: false
+pre: " <b> 1.6. </b> "
 ---
 
-### 🇬🇧 Week 06 Worklog
+### Week 6 Objectives:
+* Implement a modern **Analytics Engineering** transformation architecture using **dbt Core (`dbt-redshift`)** connected to Amazon Redshift Serverless.
+* Build the **Staging Layer (7 Views)** for data cleansing/standardization and the **Marts Layer (3 Physical Tables)** modeled as a **Kimball Star Schema** (`fct_orders`, `dim_customers`, `dim_products`).
+* Enforce automated data quality governance (**9 dbt data tests**) validating primary key uniqueness, non-nullability, and foreign key referential integrity.
 
-**1. Tasks Completed:**
-- **dbt Core (`dbt-redshift`) Transformation Architecture Setup:**
-  - Initialized the **dbt Core** project connected directly to **Amazon Redshift Serverless** via `profiles.yml` using environment-injected secrets (`DBT_REDSHIFT_PASSWORD`).
-  - Configured `dbt_project.yml` to enforce a multi-layered materialization strategy: the **Staging** layer materialized as lightweight `VIEW` objects (zero additional storage overhead) and the **Marts** layer materialized as physical `TABLE` objects (optimized for analytical BI query performance).
-- **Staging Layer Development (`public_staging` - 7 Views):**
-  - Declared raw source mappings in `models/staging/sources.yml` pointing to the `raw_data` schema in Redshift.
-  - Built 7 standardized staging models (`stg_orders`, `stg_order_items`, `stg_customers`, `stg_products`, `stg_payments`, `stg_reviews`, `stg_category_translation`):
-    - Standardized column naming conventions, enforced explicit data type casting (`CAST`), and handled `NULL` defaults.
-    - Fixed upstream Olist dataset typos (`product_name_lenght` $\rightarrow$ `product_name_length`, `product_description_lenght` $\rightarrow$ `product_description_length`) and pre-computed line-item totals (`total_item_value = price + freight_value`).
-- **Kimball Star Schema Marts Layer (`public_marts` - 3 Physical Tables):**
-  - **`fct_orders` (`models/marts/fct_orders.sql`):** Engineered the core order-granularity Fact table integrating:
-    - *Financial Metrics:* `total_items`, `total_item_value`, `total_freight_value`, `total_payment_value`, `primary_payment_type`, and `max_installments`.
-    - *Logistics & Delivery Performance:* Computed actual delivery duration (`delivery_duration_days`), estimated duration (`estimated_delivery_duration_days`), net delay days (`delay_days`), and a binary SLA breach flag (`is_delayed = 1` when actual delivery exceeds estimated date).
-    - *Customer Satisfaction:* Aggregated order-level average `review_score`.
-  - **`dim_customers` (`models/marts/dim_customers.sql`):** Engineered the Customer Dimension table resolving Olist's dual-identifier grain (`customer_id` per order vs. `customer_unique_id` per human customer). Calculated `first_order_date`, `most_recent_order_date`, `total_orders`, **Customer Lifetime Value (`lifetime_spend`)**, and automated behavioral segmentation (`Returning Customer` when `total_orders > 1` vs. `One-Time Customer`).
-  - **`dim_products` (`models/marts/dim_products.sql`):** Engineered the Product Dimension table joining Portuguese category names with `stg_category_translation` to produce standardized English categories (`category_name`, defaulting to `'unknown'` on missing values) alongside physical dimensions and weight metrics.
-- **Automated Data Quality Testing & Lineage Documentation:**
-  - Authored 9 automated data quality assertions in `models/marts/schema.yml`:
-    - Primary key `unique` and `not_null` constraints across `fct_orders.order_id`, `dim_customers.customer_id`, `dim_products.product_id`, and `dim_customers.customer_unique_id`.
-    - Foreign key referential integrity (`relationships`) verifying that every `customer_id` in `fct_orders` maps to a valid record in `dim_customers`.
-  - Executed `dbt run` and `dbt test` achieving **100% test pass rate (`PASS=9 WARN=0 ERROR=0`)** and generated the end-to-end **dbt Data Lineage Graph**.
+### Tasks to be carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
+| :---: | :--- | :---: | :---: | :--- |
+| **Mon (Day 2)** | - Initialize the **dbt Core (`dbt-redshift`)** project and configure environment-backed Redshift Serverless profiles (`profiles.yml` & `.env`) <br> - Configure materializations in `dbt_project.yml`: **Staging** models as lightweight `VIEW` objects and **Marts** models as physical `TABLE` objects | 02/11/2026 | 02/11/2026 | <https://docs.getdbt.com/docs/core/connect-data-platform/redshift-setup> |
+| **Tue (Day 3)** | - Define raw source mappings in `models/staging/sources.yml` <br> - Develop **7 Staging Views** (`stg_orders`, `stg_order_items`, `stg_customers`, `stg_products`, `stg_payments`, `stg_reviews`, `stg_category_translation`): standardize column naming, enforce `CAST` types, handle `NULL` defaults, and fix Olist typos (`product_name_lenght` $\rightarrow$ `product_name_length`) | 03/11/2026 | 03/11/2026 | <https://docs.getdbt.com/best-practices/how-we-structure/2-staging> |
+| **Wed (Day 4)** | - Engineer the core Fact table **`fct_orders` (`models/marts/fct_orders.sql`)** at order granularity: integrate financial metrics (`total_item_value`, `total_freight_value`, `total_payment_value`), delivery SLA metrics (`delivery_duration_days`, `delay_days`, `is_delayed`), and average `review_score` | 04/11/2026 | 04/11/2026 | *The Data Warehouse Toolkit (Kimball)* |
+| **Thu (Day 5)** | - Engineer the 2 Dimension tables: <br>&emsp; + **`dim_customers`:** Resolve `customer_unique_id` grain, compute **Customer Lifetime Value (`lifetime_spend`)**, order frequency, and automated segmentation (`Returning Customer` vs. `One-Time Customer`) <br>&emsp; + **`dim_products`:** Join category translation mappings to standardize Portuguese product categories into English (`category_name`) | 05/11/2026 | 05/11/2026 | <https://docs.getdbt.com/best-practices/how-we-structure/4-marts> |
+| **Fri (Day 6)** | - Author **9 automated data quality tests** in `models/marts/schema.yml` (`unique`, `not_null`, and foreign key `relationships` verifying `fct_orders.customer_id` $\rightarrow$ `dim_customers.customer_id`) <br> - Execute `dbt run` and `dbt test` achieving **`PASS=9 WARN=0 ERROR=0`** and generate the **dbt Data Lineage Graph** | 06/11/2026 | 06/11/2026 | <https://docs.getdbt.com/docs/build/data-tests> |
 
-**2. Key Deliverables & Results:**
-- Transformed fragmented raw tables into a production-ready **Kimball Star Schema** (`fct_orders`, `dim_customers`, `dim_products`) in Amazon Redshift Serverless.
-- Applied modern **Analytics Engineering** practices: modular CTE SQL modeling with Jinja `{{ ref() }}` dependencies, version-controlled transformations, and automated schema testing.
-- Validated 100% data integrity across all analytical marts with 9/9 automated dbt tests passing.
-
-**3. References:**
-- Kimball, R., & Ross, M.: *The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling*.
-- dbt Labs Documentation: Best Practices for Structuring dbt Projects (Staging vs. Marts) & Data Tests.
-- dbt-redshift Adapter Reference: Materializations and Redshift Serverless Configuration.
+### Week 6 Achievements:
+* Transformed 9 raw relational datasets into an enterprise-ready **Kimball Star Schema** (`fct_orders`, `dim_customers`, `dim_products`) in Amazon Redshift Serverless.
+* Mastered modular SQL development using CTEs and Jinja `{{ ref() }}` macros with automated dependency resolution and **Data Lineage** documentation.
+* Guaranteed **100% analytical data integrity** across all Fact and Dimension tables with 9/9 automated dbt tests passing.

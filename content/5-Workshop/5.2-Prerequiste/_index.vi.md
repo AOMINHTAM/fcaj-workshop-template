@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.2 Các bước chuẩn bị"
 weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

@@ -1,29 +1,37 @@
 ---
-title: "Trang chủ"
+title: "Báo cáo thực tập"
+date: 2026-09-26
 weight: 1
+chapter: false
 ---
 
-# Báo cáo thực tập First Cloud Journey
+### Thông tin sinh viên:
+&emsp; **Họ và tên:** Ao Minh Tâm
 
-Chào mừng bạn đến với trang báo cáo thực tập của mình tại chương trình **Workforce Bootcamp - First Cloud AI Journey (FCAJ)**!
+&emsp; **Số điện thoại:** *(Cập nhật số điện thoại)*
 
-### 🎓 Thông tin sinh viên
-- **Họ và tên:** Ao Minh Tâm
-- **Trường:** Đại học Tài Nguyên và Môi Trường TP.HCM (HCMUNRE)
-- **Chuyên ngành:** Công Nghệ Thông Tin
-- **Chương trình:** Workforce Bootcamp - First Cloud AI Journey
-- **Vị trí thực tập:** Cloud / Data Engineer Intern
-- **Định hướng chuyên sâu:** Data & Analytics
-- **Thời gian thực tập:** 2026
+&emsp; **Email:** aominhtam@gmail.com
+
+&emsp; **Trường:** Đại học Tài Nguyên và Môi Trường TP.HCM (HCMUNRE)
+
+&emsp; **Ngành:** Công nghệ thông tin
+
+&emsp; **Định hướng chuyên sâu:** Data & Analytics
+
+&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Việt Nam
+
+&emsp; **Vị trí thực tập:** Cloud / Data Engineer Intern (Workforce Bootcamp - First Cloud AI Journey)
+
+&emsp; **Thời gian thực tập:** Từ ngày 26/09/2026 đến ngày 18/12/2026
 
 ---
 
-### 📌 Giới thiệu tổng quan
-Trang web này đóng vai trò là hồ sơ báo cáo tổng hợp toàn bộ kết quả trong suốt quá trình tham gia chương trình thực tập, bao gồm:
-1. **Worklog:** Nhật ký công việc và tiến độ học tập hàng tuần từ Week 01 đến Week 12.
-2. **Proposal:** Đề xuất giải pháp và thiết kế kiến trúc kỹ thuật.
-3. **Blogs Posted:** Các bài viết nghiên cứu chuyên sâu chia sẻ trên cộng đồng AWS Study Group.
-4. **Events Participated:** Hoạt động và bài học từ các sự kiện chuyên môn đã tham gia.
-5. **Workshop:** Tài liệu hướng dẫn triển khai giải pháp kỹ thuật thực tế trên AWS (kèm sơ đồ kiến trúc, dự toán chi phí và mã nguồn demo).
-6. **Self-evaluation:** Tự đánh giá năng lực cá nhân.
-7. **Feedback:** Cảm nhận và đóng góp ý kiến về chương trình FCAJ.
+### Nội dung báo cáo
+
+1. [Worklog (Nhật ký công việc)](1-Worklog/)
+2. [Proposal (Đề xuất giải pháp)](2-Proposal/)
+3. [Các bài blogs đã đăng](3-BlogsPosted/)
+4. [Các events đã tham gia](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Tự đánh giá](6-Self-evaluation/)
+7. [Chia sẻ, đóng góp ý kiến](7-Feedback/)

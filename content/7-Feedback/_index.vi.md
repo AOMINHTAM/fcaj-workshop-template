@@ -1,9 +1,9 @@
----
+﻿---
 title: "Góp ý chương trình"
 weight: 7
+chapter: false
+pre: " <b> 7. </b> "
 ---
-
-# 💬 Đóng góp ý kiến & Cảm nhận (Feedback)
 
 ### ⏳ Đang cập nhật (Coming Soon)
 

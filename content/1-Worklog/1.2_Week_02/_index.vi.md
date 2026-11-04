@@ -1,24 +1,24 @@
 ---
-title: "Tuần 2: Quản trị bảo mật IAM & Hỗ trợ kỹ thuật sự kiện"
+title: "Worklog Tuần 2"
 weight: 2
+chapter: false
+pre: " <b> 1.2. </b> "
 ---
 
-### 🇻🇳 Báo cáo công việc Tuần 02
+### Mục tiêu tuần 2:
+* Nắm vững kiến trúc quản trị định danh và truy cập trên AWS (**AWS IAM**): Users, User Groups, Policies, IAM Roles và cơ chế ủy quyền tạm thời (`sts:AssumeRole`).
+* Trực tiếp lên văn phòng FCAJ và tham gia hỗ trợ công tác kỹ thuật chuẩn bị sự kiện cộng đồng.
 
-**1. Công việc đã thực hiện:**
-- **Hoạt động trực tiếp tại văn phòng:** Có mặt tại văn phòng vào Thứ Năm (01/10/2026), tham gia hỗ trợ Ban tổ chức chuẩn bị cơ sở vật chất, đường truyền và thiết bị kỹ thuật phục vụ cho sự kiện diễn ra vào Thứ Sáu (02/10/2026).
-- **Quản trị định danh và truy cập (AWS IAM):**
-  - Khởi tạo IAM User Group mang tên chính xác **`FCAJ-Admin`** và đính kèm chính sách `AdministratorAccess`.
-  - Tạo IAM User (`aotam_admin`) phục vụ thao tác kỹ thuật hàng ngày, dừng hoàn toàn việc dùng tài khoản Root.
-  - Kích hoạt tính năng truy cập thanh toán (Billing Access) cho danh tính IAM từ cấu hình tài khoản.
-  - Khởi tạo IAM Role (`AdminRole`) với chính sách tin cậy (Trust Policy) cho phép ủy quyền `sts:AssumeRole`.
-  - Thực hành quy trình **Switch Role** trực tiếp trên thanh điều hướng AWS Management Console để thẩm tra luồng cấp phát quyền tạm thời (Temporary Credentials) và kiểm chứng nguyên tắc Least Privilege.
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :---: | :--- | :---: | :---: | :--- |
+| **Thứ 2** | - Nghiên cứu lý thuyết **AWS Identity and Access Management (IAM)** <br> - Phân biệt tài khoản Root, IAM User, IAM User Group và nguyên tắc **Least Privilege** | 05/10/2026 | 05/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - **Thực hành IAM:** <br>&emsp; + Khởi tạo IAM User Group `FCAJ-Admin` gắn chính sách `AdministratorAccess` <br>&emsp; + Tạo IAM User `aotam_admin` phục vụ thao tác kỹ thuật hàng ngày, ngừng sử dụng tài khoản Root | 06/10/2026 | 06/10/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html> |
+| **Thứ 4** | - Kích hoạt quyền truy cập Billing Console cho IAM User <br> - Khởi tạo **IAM Role (`AdminRole`)** với Trust Policy cho phép ủy quyền qua `sts:AssumeRole` | 07/10/2026 | 07/10/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html> |
+| **Thứ 5** | - **Trực văn phòng FCAJ:** Có mặt tại văn phòng, phối hợp cùng Ban tổ chức kiểm tra đường truyền mạng, thiết bị trình chiếu và hậu cần kỹ thuật cho sự kiện chuyên đề | 08/10/2026 | 08/10/2026 | Nội quy văn phòng FCAJ |
+| **Thứ 6** | - Thực hành quy trình **Switch Role** trực tiếp trên AWS Management Console <br> - Kiểm chứng cơ chế cấp phát thông tin xác thực tạm thời (Temporary Security Credentials) qua AWS STS | 09/10/2026 | 09/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-**2. Kết quả đạt được:**
-- Hoàn thành 01 buổi trực văn phòng và đóng góp hỗ trợ công tác tổ chức sự kiện cộng đồng.
-- Nắm vững kiến trúc phân quyền IAM: phân biệt vai trò giữa IAM User (định danh dài hạn cho con người) và IAM Role (cấp quyền tạm thời cho dịch vụ và cơ chế ủy quyền chéo).
-- Vận hành thành công cơ chế Switch Role an toàn trên AWS Console.
-
-**3. Tài liệu tham khảo:**
-- FCAJ Lab Guide: Access Management with AWS Identity and Access Management (AWS IAM).
-- AWS Documentation: Security Best Practices in IAM & Role Switching.
+### Kết quả đạt được tuần 2:
+* Hoàn thành buổi trực văn phòng và đóng góp hỗ trợ kỹ thuật cho sự kiện của cộng đồng FCAJ.
+* Thiết lập chuẩn mực bảo mật tài khoản AWS: tách biệt hoàn toàn Root User, quản lý quyền tập trung qua Group `FCAJ-Admin` và User `aotam_admin`.
+* Hiểu sâu sự khác biệt giữa định danh dài hạn (IAM User) và định danh tạm thời qua STS (IAM Role), làm nền tảng để phân quyền giữa S3 và Redshift ở các tuần tiếp theo.

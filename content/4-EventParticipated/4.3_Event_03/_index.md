@@ -1,6 +1,8 @@
----
+﻿---
 title: "Event 3: Coming Soon"
 weight: 3
+chapter: false
+pre: " <b> 4.3. </b> "
 ---
 
 ### ⏳ Coming Soon

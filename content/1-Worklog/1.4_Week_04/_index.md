@@ -1,32 +1,25 @@
 ---
-title: "Week 4: Amazon S3 Data Lake Architecture & Serverless Analytics with Athena"
+title: "Week 4 Worklog"
 weight: 4
+chapter: false
+pre: " <b> 1.4. </b> "
 ---
 
-### 🇬🇧 Week 04 Worklog
+### Week 4 Objectives:
+* Architect a multi-layered **Medallion Data Lake** on **Amazon S3** secured with **SSE-KMS** encryption and automated **S3 Lifecycle Rules**.
+* Automate schema discovery and metadata governance using **AWS Glue Data Catalog** and **AWS Glue Crawlers**.
+* Execute serverless analytical SQL queries with **Amazon Athena** and benchmark **Apache Parquet** columnar storage performance.
 
-**1. Tasks Completed:**
-- **Amazon S3 Data Lake Foundation:**
-  - Designed a multi-layered storage layout for the Data Lake following the medallion architecture pattern:
-    - `bronze-raw/`: Ingested raw datasets in uncompressed format (JSON / CSV).
-    - `silver-cleaned/`: Cleaned and standardized schema data.
-    - `gold-curated/`: Partitioned columnar format (Apache Parquet) optimized for analytical queries.
-  - Enforced strict bucket-level security: **Block Public Access** activated globally, S3 Bucket Policies restricting cross-account access, and default Server-Side Encryption with KMS keys (**SSE-KMS**).
-  - Configured **S3 Lifecycle Rules** for automated storage tiering (transitioning Bronze data to S3 Standard-IA after 30 days and archiving historical objects to S3 Glacier Flexible Retrieval after 90 days to minimize ongoing storage overhead).
-- **Metadata Management with AWS Glue:**
-  - Created an **AWS Glue Data Catalog** database to maintain unified schema definitions.
-  - Configured and executed an **AWS Glue Crawler** to crawl raw and partitioned datasets stored in S3, automatically inferring data schemas, partition keys (`year=YYYY/month=MM`), and metadata definitions.
-- **Serverless Querying with Amazon Athena:**
-  - Configured an Athena Query Result location bucket with lifecycle expiration.
-  - Executed interactive serverless SQL queries against the crawled datasets directly in the S3 Data Lake without spinning up database servers.
-  - Evaluated query execution performance and cost impact: compared scanned data volumes between raw unpartitioned CSV versus partitioned Apache Parquet format, observing a ~85% reduction in scanned data and significantly faster query latency.
+### Tasks to be carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
+| :---: | :--- | :---: | :---: | :--- |
+| **Mon (Day 2)** | - Study **Medallion Data Lake Architecture** (`Bronze` $\rightarrow$ `Silver` $\rightarrow$ `Gold`) on Amazon S3 <br> - Provision S3 Data Lake prefixes (`bronze-raw/`, `silver-cleaned/`, `gold-curated/`) with **Block Public Access** and **SSE-KMS** encryption | 19/10/2026 | 19/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Tue (Day 3)** | - Configure **S3 Lifecycle Rules** transitioning Bronze objects to `S3 Standard-IA` after 30 days and `S3 Glacier Flexible Retrieval` after 90 days <br> - Upload raw CSV/JSON and partitioned **Apache Parquet** (`year=YYYY/month=MM`) datasets to S3 | 20/10/2026 | 20/10/2026 | <https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html> |
+| **Wed (Day 4)** | - Create a unified database in **AWS Glue Data Catalog** <br> - Configure Glue IAM Role and execute an **AWS Glue Crawler** to infer schemas and register partition keys from S3 | 21/10/2026 | 21/10/2026 | <https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html> |
+| **Thu (Day 5)** | - Configure **Amazon Athena** query result location on S3 with a 7-day expiration policy <br> - Run serverless analytical SQL queries against Glue Catalog tables | 22/10/2026 | 22/10/2026 | <https://docs.aws.amazon.com/athena/latest/ug/what-is.html> |
+| **Fri (Day 6)** | - Benchmark query latency and **Data Scanned** volume on Athena comparing unpartitioned CSV vs. partitioned **Apache Parquet** <br> - Audit and clean up test resources | 23/10/2026 | 23/10/2026 | <https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html> |
 
-**2. Key Deliverables & Results:**
-- Fully deployed and secured a 3-tier Data Lake foundation on Amazon S3.
-- Automated schema discovery and metadata synchronization using AWS Glue Crawlers.
-- Mastered cost-optimized serverless big data analytics using Amazon Athena and columnar Parquet formats.
-
-**3. References:**
-- FCAJ Lab Guide: Building a Serverless Data Lake with Amazon S3, AWS Glue & Amazon Athena.
-- AWS Prescriptive Guidance: Data Lake Storage Best Practices on Amazon S3.
-- Amazon Athena User Guide: Performance Tuning and Partitioning.
+### Week 4 Achievements:
+* Deployed a secure, cost-tiered 3-layer Data Lake (`Bronze`, `Silver`, `Gold`) on Amazon S3.
+* Automated metadata cataloging and partition discovery using AWS Glue Crawlers.
+* Validated an **~85% reduction in scanned data volume** and faster query execution on Amazon Athena by leveraging partitioned Apache Parquet formats.

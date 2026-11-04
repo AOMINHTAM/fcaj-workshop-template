@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.6 Resource Cleanup"
 weight: 6
+chapter: false
+pre: " <b> 5.6. </b> "
 ---
 
 ### ⏳ Coming Soon

@@ -1,29 +1,25 @@
 ---
-title: "Tuần 3: Mạng hạ tầng Amazon VPC & Bảo mật hệ thống Cloud"
+title: "Worklog Tuần 3"
 weight: 3
+chapter: false
+pre: " <b> 1.3. </b> "
 ---
 
-### 🇻🇳 Báo cáo công việc Tuần 03
+### Mục tiêu tuần 3:
+* Hiểu và thiết kế kiến trúc mạng đám mây **Amazon Virtual Private Cloud (VPC)** đa phân vùng khả dụng (Multi-AZ).
+* Nắm vững cơ chế định tuyến giữa Public Subnet và Private Subnet thông qua **Internet Gateway (IGW)** và **NAT Gateway**.
+* Thiết lập bảo mật mạng đa lớp bằng **Security Groups (Stateful)** và **Network ACLs (Stateless)**.
 
-**1. Công việc đã thực hiện:**
-- **Thiết kế kiến trúc Virtual Private Cloud (VPC):**
-  - Khởi tạo VPC tùy chỉnh với dải địa chỉ CIDR `10.0.0.0/16` trải rộng trên 2 Availability Zones (AZs) nhằm đảm bảo tính sẵn sàng cao (High Availability).
-  - Phân chia cấu trúc mạng 2 tầng (dual-tier subnets): 2 Public Subnet (dành cho các cổng tiếp nhận lưu lượng Internet) và 2 Private Subnet (cô lập an toàn các dịch vụ xử lý dữ liệu nội bộ).
-- **Cấu hình định tuyến và Gateway:**
-  - Khởi tạo **Internet Gateway (IGW)**, gắn vào VPC và cập nhật bảng định tuyến công khai (Public Route Table: `0.0.0.0/0 -> igw-xxxx`).
-  - Triển khai **NAT Gateway** tại Public Subnet kèm theo Elastic IP (EIP), cho phép các tài nguyên trong Private Subnet truy cập Internet chiều ra (outbound) để tải thư viện/bản vá nhưng chặn hoàn toàn kết nối trực tiếp từ ngoài vào (inbound).
-  - Cập nhật Private Route Table điều hướng toàn bộ lưu lượng ra Internet thông qua NAT Gateway.
-- **Bảo mật mạng và phân tầng phòng thủ:**
-  - Thiết lập **Security Groups (SG)** tuân thủ nguyên tắc Least Privilege (giới hạn cổng SSH 22 chỉ mở cho IP quản trị, lưu lượng nội bộ giới hạn trong CIDR của VPC).
-  - Cấu hình **Network ACLs (NACL)** như một lớp tường lửa cấp độ subnet để bảo vệ bổ trợ.
-  - Khởi tạo EC2 kiểm thử trong cả hai phân vùng mạng để kiểm tra tính toàn vẹn của luồng định tuyến và độ an toàn mạng.
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :---: | :--- | :---: | :---: | :--- |
+| **Thứ 2** | - Nghiên cứu kiến trúc **Amazon VPC**, quy hoạch dải địa chỉ IPv4 CIDR (`10.0.0.0/16`) <br> - Phân tích mô hình phân tách mạng 2 tầng (Public Subnet & Private Subnet) trên 2 Availability Zones | 12/10/2026 | 12/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - **Thực hành khởi tạo VPC:** <br>&emsp; + Tạo VPC tùy chỉnh `10.0.0.0/16` <br>&emsp; + Chia 2 Public Subnets và 2 Private Subnets trải đều trên 2 AZs để đảm bảo High Availability | 13/10/2026 | 13/10/2026 | <https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html> |
+| **Thứ 4** | - **Cấu hình Gateway & Route Tables:** <br>&emsp; + Gắn **Internet Gateway (IGW)** vào VPC và cấu hình Public Route Table (`0.0.0.0/0 -> igw-xxxx`) <br>&emsp; + Khởi tạo **NAT Gateway** kèm Elastic IP tại Public Subnet và định tuyến chiều ra cho Private Route Table | 14/10/2026 | 14/10/2026 | <https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html> |
+| **Thứ 5** | - Thiết lập **Security Groups** (giới hạn cổng SSH 22 và lưu lượng nội bộ theo nguyên tắc Least Privilege) <br> - Cấu hình **Network ACLs (NACL)** bảo vệ bổ trợ ở cấp độ Subnet | 15/10/2026 | 15/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 6** | - Khởi tạo máy chủ EC2 kiểm thử tại Public và Private Subnet để xác minh luồng kết nối mạng <br> - Thực hiện **Clean Up toàn bộ NAT Gateway, Elastic IP và EC2** để tránh phát sinh phí theo giờ | 16/10/2026 | 16/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
-**2. Kết quả đạt được:**
-- Xây dựng thành công hạ tầng mạng Multi-AZ chuẩn doanh nghiệp, tạo nền tảng vững chắc cho các pipeline dữ liệu tiếp theo.
-- Thực thi cơ chế cô lập an toàn, triệt tiêu nguy cơ lộ lọt tài nguyên backend ra Internet công cộng.
-- Kiểm thử và xác minh kết nối đa phân vùng thành công.
-
-**3. Tài liệu tham khảo:**
-- FCAJ Lab Guide: Networking on AWS - Amazon VPC Architecture.
-- AWS Documentation: VPC with Public and Private Subnets (NAT).
-- AWS Well-Architected Framework: Reliability and Security Pillars.
+### Kết quả đạt được tuần 3:
+* Xây dựng hoàn chỉnh hạ tầng mạng Amazon VPC Multi-AZ chuẩn doanh nghiệp, cô lập an toàn các tài nguyên dữ liệu ở tầng Private Subnet.
+* Hiểu rõ luồng đi của gói tin qua Internet Gateway, NAT Gateway, Route Tables và sự khác biệt giữa Security Group (Stateful) với Network ACL (Stateless).
+* Nắm vững kỹ năng quản trị Security Group và cổng dịch vụ — trực tiếp áp dụng để cấu hình kết nối an toàn cổng `5439` cho Amazon Redshift ở các tuần tiếp theo.

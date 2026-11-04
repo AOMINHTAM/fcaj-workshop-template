@@ -1,6 +1,8 @@
----
+﻿---
 title: "Blog 2: Coming Soon"
 weight: 2
+chapter: false
+pre: " <b> 3.2. </b> "
 ---
 
 ### ⏳ Coming Soon

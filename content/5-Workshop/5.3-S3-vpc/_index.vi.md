@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.3 Truy cập Amazon S3 thông qua VPC Endpoints"
 weight: 3
+chapter: false
+pre: " <b> 5.3. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

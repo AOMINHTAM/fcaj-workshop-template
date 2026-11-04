@@ -1,29 +1,26 @@
 ---
-title: "Tuần 1: Khởi động Bootcamp, Sự cố tài khoản & Chiến lược săn $200 Credit"
+title: "Worklog Tuần 1"
 weight: 1
+chapter: false
+pre: " <b> 1.1. </b> "
 ---
 
-### 🇻🇳 Báo cáo công việc Tuần 01
+### Mục tiêu tuần 1:
+* Tham gia sự kiện Kick-off chương trình **Workforce Bootcamp - First Cloud AI Journey (FCAJ)**, nắm vững nội quy, quy chế và định hướng chuyên sâu **Data & Analytics**.
+* Khởi tạo tài khoản AWS Free Tier, xử lý sự cố xác minh tài khoản và hoàn thành chuỗi tác vụ **Explore AWS** để nhận **$200 AWS Credit**.
+* Thiết lập hàng rào kiểm soát chi phí **FinOps** với **AWS Budgets** (4 ngưỡng cảnh báo tự động).
 
-**1. Công việc đã thực hiện:**
-- Tham gia sự kiện **Kick-off Workforce Bootcamp - First Cloud AI Journey (FCAJ)** vào Thứ Bảy (26/09/2026). Nắm rõ lộ trình, điều kiện hoàn thành khóa thực tập và định hướng chuyên sâu **Data & Analytics**.
-- Đăng ký tài khoản AWS Free Tier nhưng bị kẹt ở bước xác minh danh tính qua SMS và cuộc gọi tự động.
-- Tạo phiếu hỗ trợ AWS Support (Case ID: `179040404500475`) gửi yêu cầu xác minh thủ công bằng thẻ ngân hàng.
-- Chủ động mượn tài khoản AWS đã kích hoạt từ bạn bè để duy trì đúng tiến độ thực hành của chương trình.
-- Thực hiện chuỗi tác vụ trên widget **Explore AWS** để nhận thêm $100 credit, nâng tổng ngân sách thử nghiệm của tài khoản lên **$200 Credit**:
-  - **Task 1 (EC2):** Khởi tạo máy chủ EC2 mẫu (`first-kp.pem`, t2/t3.micro) và thực hiện Terminate dọn dẹp an toàn ($20 credit).
-  - **Task 2 (Bedrock):** Khảo sát cấu hình Playground với Foundation Model Claude Haiku / Titan ($20 credit).
-  - **Task 3 (AWS Budgets):** Thiết lập ngân sách kiểm soát chi phí $20 ban đầu ($20 credit).
-  - **Task 4 (Lambda):** Triển khai hàm serverless `http-function-url-tutorial` qua blueprint HTTP và xóa dọn dẹp ($20 credit).
-  - **Task 5 (RDS):** Khởi tạo cụm cơ sở dữ liệu quan hệ Aurora PostgreSQL và thực hiện quy trình Clean Up 2 tầng (Instance & DB Cluster) ($20 credit).
-- Nâng cấp cấu hình **AWS Budgets** lên ngân sách tổng **$200** với 4 nấc cảnh báo liên hoàn (12.5% - $25, 25% - $50, 50% - $100, 75% - $150) về email cá nhân để thiết lập hàng rào FinOps chống rủi ro tài chính.
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :---: | :--- | :---: | :---: | :--- |
+| **Thứ 7 (Kick-off)** | - Tham gia sự kiện **Kick-off Workforce Bootcamp - FCAJ** <br> - Tìm hiểu quy định thực tập, tiêu chí đánh giá dự án và lộ trình 12 tuần | 26/09/2026 | 26/09/2026 | <https://hcm-rules.awsfcaj.com/> |
+| **Thứ 2** | - Đăng ký tài khoản AWS Free Tier cá nhân <br> - Mở phiếu hỗ trợ **AWS Support** (Case ID: `179040404500475`) xử lý lỗi xác minh SMS/Call và chủ động mượn tài khoản AWS dự phòng để đảm bảo tiến độ | 28/09/2026 | 28/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 3** | - Thực hiện chuỗi **Explore AWS** săn Credit (Phần 1): <br>&emsp; + **Task 1 (EC2):** Khởi tạo máy chủ `t2/t3.micro` (`first-kp.pem`) và Terminate an toàn (+\$20) <br>&emsp; + **Task 2 (Amazon Bedrock):** Trải nghiệm Text Playground với Claude Haiku / Titan (+\$20) | 29/09/2026 | 29/09/2026 | <https://aws.amazon.com/free/> |
+| **Thứ 4** | - Thực hiện chuỗi **Explore AWS** săn Credit (Phần 2): <br>&emsp; + **Task 3 (AWS Budgets):** Tạo ngân sách kiểm soát chi phí ban đầu (+\$20) <br>&emsp; + **Task 4 (AWS Lambda):** Triển khai hàm serverless `http-function-url-tutorial` và xóa dọn dẹp (+\$20) | 30/09/2026 | 30/09/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| **Thứ 5 - Thứ 6** | - Hoàn tất **Task 5 (Amazon RDS):** Khởi tạo cụm Aurora PostgreSQL và thực hiện quy trình Clean Up 2 tầng (Instance & DB Cluster) (+\$20) <br> - Nâng cấp **AWS Budgets** lên tổng ngân sách **\$200** với 4 nấc cảnh báo email (`12.5% - $25`, `25% - $50`, `50% - $100`, `75% - $150`) | 01/10/2026 | 02/10/2026 | <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html> |
 
-**2. Kết quả đạt được:**
-- Xử lý linh hoạt sự cố xác thực tài khoản, không làm gián đoạn tiến độ chung.
-- Hoàn thành đầy đủ 5 tác vụ Explore AWS, xác minh số dư $200 Credit đã nạp vào mục Billing Credits.
-- Thiết lập thành công hệ thống phòng vệ chi phí 4 nấc bảo vệ tài khoản mượn trong suốt 6 tháng học tập.
-
-**3. Tài liệu tham khảo:**
-- FCAJ Lab Guide: Explore AWS Services & AWS Free Tier Strategy ($200 Credit).
-- AWS Billing & Cost Management: Managing your costs with AWS Budgets.
-- AWS Knowledge Center: Manual Account Verification Troubleshooting.
+### Kết quả đạt được tuần 1:
+* Xử lý linh hoạt sự cố xác thực tài khoản thông qua AWS Support mà không làm gián đoạn tiến độ học tập.
+* Hoàn thành 5/5 tác vụ trên widget **Explore AWS**, xác minh tổng số dư **\$200 Credit** đã được cộng vào mục Billing Credits.
+* Thiết lập thành công hệ thống cảnh báo chi phí **AWS Budgets 4 cấp độ**, đảm bảo an toàn tài chính tuyệt đối cho tài khoản trong suốt kỳ thực tập.
+* Rèn luyện thói quen **Clean Up tài nguyên đa tầng** (EC2, Lambda, RDS Instance & Cluster) ngay sau khi hoàn tất bài thực hành.

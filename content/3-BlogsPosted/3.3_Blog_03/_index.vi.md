@@ -1,6 +1,8 @@
----
+﻿---
 title: "Bài viết 3: Sắp ra mắt"
 weight: 3
+chapter: false
+pre: " <b> 3.3. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

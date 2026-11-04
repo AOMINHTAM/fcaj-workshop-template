@@ -1,30 +1,60 @@
 baseURL = "https://aominhtam.github.io/fcaj-workshop-template/"
-languageCode = "vi"
-defaultContentLanguage = "vi"
-defaultContentLanguageInSubdir = false
-title = "Báo cáo thực tập FCAJ - Ao Minh Tâm"
+relativeURLs = false
+canonifyURLs = false
+defaultContentLanguage = "en"
+
+# Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
 [params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "workshop"
-  description = "Workforce Bootcamp - First Cloud AI Journey (FCAJ) Internship Portfolio"
+  # Git hub repo link
+  editURL = ""
+  description = "Workforce Bootcamp - First Cloud AI Journey (FCAJ) Internship Report"
   author = "Ao Minh Tâm"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
 
 [Languages]
-[Languages.vi]
-  title = "Báo cáo thực tập FCAJ"
-  weight = 1
-  languageName = "Tiếng Việt"
-  landingPageName = "<i class='fas fa-home'></i> Trang chủ"
-
 [Languages.en]
-  title = "FCAJ Internship Report"
-  weight = 2
-  languageName = "English"
-  landingPageName = "<i class='fas fa-home'></i> Home"
+title = "Internship Report"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
+identifier = "AWS Study Group"
+url = "https://awsstudygroup.com"
+weight = 20
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group - FB Group"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj"
+weight = 20
+
+[Languages.vi]
+title = "Báo cáo thực tập"
+weight = 2
+languageName = "Tiếng Việt"
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
+identifier = "AWS Study Group"
+url = "https://awsstudygroup.com"
+weight = 20
+
+[[Languages.vi.menu.shortcuts]]
+name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
+identifier = "AWS Study Group FB"
+url = "https://www.facebook.com/groups/awsstudygroupfcj"
+weight = 20
 
 [markup]
   [markup.goldmark]

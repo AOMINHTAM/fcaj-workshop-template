@@ -1,9 +1,9 @@
----
+﻿---
 title: "Proposal"
 weight: 2
+chapter: false
+pre: " <b> 2. </b> "
 ---
-
-# 📋 Đề xuất giải pháp kỹ thuật (Proposal)
 
 ### ⏳ Đang cập nhật (Coming Soon)
 

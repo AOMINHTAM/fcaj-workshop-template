@@ -1,9 +1,9 @@
----
+﻿---
 title: "Bài viết kỹ thuật"
 weight: 3
+chapter: false
+pre: " <b> 3. </b> "
 ---
-
-# ✍️ Bài viết kỹ thuật (Blogs Posted)
 
 ### ⏳ Đang cập nhật (Coming Soon)
 

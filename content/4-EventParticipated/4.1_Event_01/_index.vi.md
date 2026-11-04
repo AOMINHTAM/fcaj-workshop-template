@@ -1,9 +1,9 @@
----
+﻿---
 title: "Sự kiện 1: Kick-off First Cloud AI Journey"
 weight: 1
+chapter: false
+pre: " <b> 4.1. </b> "
 ---
-
-# Sự kiện: Kick-off Workforce Bootcamp - First Cloud AI Journey
 
 - **Thời gian:** Thứ Bảy, ngày 26/09/2026
 - **Địa điểm:** Văn phòng FCAJ / Trực tiếp

@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.6 Dọn dẹp tài nguyên"
 weight: 6
+chapter: false
+pre: " <b> 5.6. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

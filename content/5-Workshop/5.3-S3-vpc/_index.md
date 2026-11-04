@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.3 Accessing Amazon S3 through VPC Endpoints"
 weight: 3
+chapter: false
+pre: " <b> 5.3. </b> "
 ---
 
 ### ⏳ Coming Soon

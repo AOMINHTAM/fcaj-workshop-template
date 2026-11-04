@@ -1,9 +1,9 @@
----
+﻿---
 title: "Event 1: First Cloud AI Journey Kick-off"
 weight: 1
+chapter: false
+pre: " <b> 4.1. </b> "
 ---
-
-# Event: Workforce Bootcamp - First Cloud AI Journey Kick-off
 
 - **Date:** Saturday, September 26, 2026
 - **Location:** FCAJ Office / In-person

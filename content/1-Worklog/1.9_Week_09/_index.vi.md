@@ -1,8 +1,10 @@
----
-title: "Tuần 9: Sắp diễn ra"
+﻿---
+title: "Worklog Tuần 9"
 weight: 9
+chapter: false
+pre: " <b> 1.9. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)
 
-> Nội dung của Tuần 09 sẽ được cập nhật theo tiến độ thực tập.
+> Nội dung công việc, bảng nhật ký thực hành theo ngày và kết quả đạt được của **Tuần 09** sẽ được cập nhật theo đúng tiến độ thực tập.

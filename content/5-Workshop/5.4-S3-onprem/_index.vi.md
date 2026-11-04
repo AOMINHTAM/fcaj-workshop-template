@@ -1,6 +1,8 @@
----
+﻿---
 title: "5.4 Truy cập Amazon S3 từ On-Premises"
 weight: 4
+chapter: false
+pre: " <b> 5.4. </b> "
 ---
 
 ### ⏳ Đang cập nhật (Coming Soon)

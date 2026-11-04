@@ -1,9 +1,9 @@
----
+﻿---
 title: "Workshop"
 weight: 5
+chapter: false
+pre: " <b> 5. </b> "
 ---
-
-# 🛠️ Tài liệu thực hành Workshop
 
 ### ⏳ Đang cập nhật (Coming Soon)
 
