@@ -8,7 +8,7 @@ chapter: false
 ### Student Information:
 &emsp; **Full Name:** Ao Minh Tam
 
-&emsp; **Phone Number:** *(Update phone number)*
+&emsp; **Phone Number:** (+84) 794 809 419
 
 &emsp; **Email:** aominhtam@gmail.com
 

@@ -8,7 +8,7 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Ao Minh Tâm
 
-&emsp; **Số điện thoại:** *(Cập nhật số điện thoại)*
+&emsp; **Số điện thoại:** 0794809419
 
 &emsp; **Email:** aominhtam@gmail.com
 
