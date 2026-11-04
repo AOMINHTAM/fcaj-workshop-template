@@ -1,5 +1,7 @@
 # First Cloud AI Journey (FCAJ) - Internship Portfolio
 
+🌐 **Live Website:** [https://aominhtam.github.io/fcaj-workshop-template/](https://aominhtam.github.io/fcaj-workshop-template/)
+
 This repository contains the internship portfolio and Hugo documentation website for **Ao Minh Tam** participating in the **Workforce Bootcamp - First Cloud AI Journey (FCAJ)** program (Track: Data & Analytics).
 
 ## 🎓 Student Information
