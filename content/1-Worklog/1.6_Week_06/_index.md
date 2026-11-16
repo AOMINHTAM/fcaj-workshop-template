@@ -6,20 +6,26 @@ pre: " <b> 1.6. </b> "
 ---
 
 ### Week 6 Objectives:
-* Implement a modern **Analytics Engineering** transformation architecture using **dbt Core (`dbt-redshift`)** connected to Amazon Redshift Serverless.
-* Build the **Staging Layer (7 Views)** for data cleansing/standardization and the **Marts Layer (3 Physical Tables)** modeled as a **Kimball Star Schema** (`fct_orders`, `dim_customers`, `dim_products`).
-* Enforce automated data quality governance (**9 dbt data tests**) validating primary key uniqueness, non-nullability, and foreign key referential integrity.
+* Establish a modern analytics engineering architecture using **dbt Core (`dbt-redshift`)** connected to Amazon Redshift Serverless.
+* Build a **Staging layer (7 Views)** for cleaning and type casting, and a **Marts layer (3 Physical Tables)** modeled after the **Kimball Star Schema** (`fct_orders`, `dim_customers`, `dim_products`).
+* Deploy an automated data quality testing framework (**9 dbt tests**) enforcing uniqueness, non-nullability, and referential integrity.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
-| :---: | :--- | :---: | :---: | :--- |
-| **Mon (Day 2)** | - Initialize the **dbt Core (`dbt-redshift`)** project and configure environment-backed Redshift Serverless profiles (`profiles.yml` & `.env`) <br> - Configure materializations in `dbt_project.yml`: **Staging** models as lightweight `VIEW` objects and **Marts** models as physical `TABLE` objects | 02/11/2026 | 02/11/2026 | <https://docs.getdbt.com/docs/core/connect-data-platform/redshift-setup> |
-| **Tue (Day 3)** | - Define raw source mappings in `models/staging/sources.yml` <br> - Develop **7 Staging Views** (`stg_orders`, `stg_order_items`, `stg_customers`, `stg_products`, `stg_payments`, `stg_reviews`, `stg_category_translation`): standardize column naming, enforce `CAST` types, handle `NULL` defaults, and fix Olist typos (`product_name_lenght` → `product_name_length`) | 03/11/2026 | 03/11/2026 | <https://docs.getdbt.com/best-practices/how-we-structure/2-staging> |
-| **Wed (Day 4)** | - Engineer the core Fact table **`fct_orders` (`models/marts/fct_orders.sql`)** at order granularity: integrate financial metrics (`total_item_value`, `total_freight_value`, `total_payment_value`), delivery SLA metrics (`delivery_duration_days`, `delay_days`, `is_delayed`), and average `review_score` | 04/11/2026 | 04/11/2026 | *The Data Warehouse Toolkit (Kimball)* |
-| **Thu (Day 5)** | - Engineer the 2 Dimension tables: <br>&emsp; + **`dim_customers`:** Resolve `customer_unique_id` grain, compute **Customer Lifetime Value (`lifetime_spend`)**, order frequency, and automated segmentation (`Returning Customer` vs. `One-Time Customer`) <br>&emsp; + **`dim_products`:** Join category translation mappings to standardize Portuguese product categories into English (`category_name`) | 05/11/2026 | 05/11/2026 | <https://docs.getdbt.com/best-practices/how-we-structure/4-marts> |
-| **Fri (Day 6)** | - Author **9 automated data quality tests** in `models/marts/schema.yml` (`unique`, `not_null`, and foreign key `relationships` verifying `fct_orders.customer_id` → `dim_customers.customer_id`) <br> - Execute `dbt run` and `dbt test` achieving **`PASS=9 WARN=0 ERROR=0`** and generate the **dbt Data Lineage Graph** | 06/11/2026 | 06/11/2026 | <https://docs.getdbt.com/docs/build/data-tests> |
+### Tasks Completed This Week:
+* **dbt Project Setup & Materialization Strategy:** Configured `dbt-redshift` credentials via environment variables (`profiles.yml` and `.env`); defined materialization rules in `dbt_project.yml` with **Staging** models materialized as `VIEW` (zero storage cost) and **Marts** materialized as physical `TABLE` (optimized for BI queries).
+* **Engineered 7 Staging Views:** Mapped source tables in `models/staging/sources.yml` to the `raw_data` schema; built 7 Staging Views (`stg_orders`, `stg_order_items`, `stg_customers`, `stg_products`, `stg_payments`, `stg_reviews`, `stg_category_translation`) to normalize column names, cast types, handle `NULL`s, and fix native Olist spelling mistakes (`product_name_lenght` → `product_name_length`).
+* **Developed Central Fact Table (`fct_orders`):** Authored `fct_orders.sql` at order grain, aggregating financial metrics (`total_item_value`, `total_freight_value`, `total_payment_value`), fulfillment logistics metrics (`delivery_duration_days`, `delay_days`, boolean flag `is_delayed`), and customer satisfaction metrics (`review_score`).
+* **Developed Kimball Dimension Models:**
+  * **`dim_customers`:** Resolved unique identity at `customer_unique_id`, computed cumulative **Customer Lifetime Value (`lifetime_spend`)**, order counts, and automated segmentation (`Returning Customer` vs. `One-Time Customer`).
+  * **`dim_products`:** Joined English translation mappings to standardize product category names from Portuguese to English (`category_name`).
+* **Automated Data Quality Testing:** Defined 9 automated tests in `models/marts/schema.yml` covering `unique`, `not_null`, and foreign key `relationships` (`fct_orders.customer_id` → `dim_customers.customer_id`); executed `dbt run` and `dbt test` achieving **`PASS=9 WARN=0 ERROR=0`** and generated the **dbt Data Lineage Graph**.
 
 ### Week 6 Achievements:
-* Transformed 9 raw relational datasets into an enterprise-ready **Kimball Star Schema** (`fct_orders`, `dim_customers`, `dim_products`) in Amazon Redshift Serverless.
-* Mastered modular SQL development using CTEs and Jinja `{{ ref() }}` macros with automated dependency resolution and **Data Lineage** documentation.
-* Guaranteed **100% analytical data integrity** across all Fact and Dimension tables with 9/9 automated dbt tests passing.
+* Transformed 9 disparate raw tables into a pristine **Kimball Star Schema Data Warehouse** (`fct_orders`, `dim_customers`, `dim_products`) on Amazon Redshift Serverless.
+* Mastered modular SQL engineering (CTEs + Jinja `{{ ref() }}`), automated dependency management, and generated end-to-end Data Lineage diagrams.
+* Verified **100% data quality and referential integrity** across the analytical models via 9/9 passing automated dbt tests.
+
+### References:
+* <https://docs.getdbt.com/docs/core/connect-data-platform/redshift-setup>
+* <https://docs.getdbt.com/best-practices/how-we-structure/2-staging>
+* <https://docs.getdbt.com/best-practices/how-we-structure/4-marts>
+* <https://docs.getdbt.com/docs/build/data-tests>

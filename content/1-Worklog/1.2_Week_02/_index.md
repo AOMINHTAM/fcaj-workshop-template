@@ -6,19 +6,24 @@ pre: " <b> 1.2. </b> "
 ---
 
 ### Week 2 Objectives:
-* Master **AWS Identity and Access Management (IAM)** architecture: Users, User Groups, Policies, IAM Roles, and temporary credential delegation (`sts:AssumeRole`).
-* Attend on-site office duty at the FCAJ office and provide technical support for community event preparation.
+* Master identity and access management architecture on AWS (**AWS IAM**): Users, User Groups, Policies, IAM Roles, and temporary delegation via `sts:AssumeRole`.
+* Attend on-site office hours at FCAJ and support technical preparations for community events.
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
-| :---: | :--- | :---: | :---: | :--- |
-| **Mon (Day 2)** | - Study **AWS IAM** fundamentals <br> - Understand Root account vs. IAM Users, IAM Groups, and the **Principle of Least Privilege** | 05/10/2026 | 05/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| **Tue (Day 3)** | - **Hands-on IAM Setup:** <br>&emsp; + Create IAM User Group `FCAJ-Admin` with `AdministratorAccess` policy <br>&emsp; + Provision IAM User `aotam_admin` for daily engineering tasks and lock away Root credentials | 06/10/2026 | 06/10/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html> |
-| **Wed (Day 4)** | - Enable IAM user access to the Billing and Cost Management console <br> - Create **IAM Role (`AdminRole`)** configured with a Trust Policy supporting `sts:AssumeRole` | 07/10/2026 | 07/10/2026 | <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html> |
-| **Thu (Day 5)** | - **FCAJ Office Attendance:** Work on-site at the office, assisting the organizing team with network checks, AV equipment setup, and event logistics | 08/10/2026 | 08/10/2026 | FCAJ Office Guidelines |
-| **Fri (Day 6)** | - Practice the **Switch Role** workflow on the AWS Management Console <br> - Verify temporary security credential issuance via AWS STS | 09/10/2026 | 09/10/2026 | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks Completed This Week:
+* **AWS IAM Security Foundations:** Studied the separation between Root account, IAM Users, IAM User Groups, Managed vs. Inline Policies, and the **Principle of Least Privilege**.
+* **Enterprise-grade Identity Setup:**
+  * Created the IAM User Group `FCAJ-Admin` attached with the `AdministratorAccess` managed policy.
+  * Created a dedicated IAM User `aotam_admin` for day-to-day cloud engineering work, safely locking away the Root account.
+  * Enabled secure Billing Console access for non-root administrative IAM users.
+* **IAM Role & STS Delegation:** Created IAM Role `AdminRole` with a Trust Policy permitting `sts:AssumeRole`; practiced the **Switch Role** workflow directly in the AWS Console and verified Temporary Security Credentials generation via AWS STS.
+* **On-site Office Support:** Reported to the FCAJ office to collaborate with program coordinators, inspecting network connectivity, audio-visual presentation equipment, and technical logistics for upcoming community workshops.
 
 ### Week 2 Achievements:
-* Completed on-site office attendance and contributed to technical logistics for FCAJ community events.
-* Enforced AWS identity security best practices by eliminating daily Root usage and centralizing permissions via `FCAJ-Admin` and `aotam_admin`.
-* Mastered IAM Role delegation (`sts:AssumeRole`), providing a solid security foundation for cross-service S3-to-Redshift authentication in later weeks.
+* Successfully fulfilled on-site office duty and contributed technical support to FCAJ community operations.
+* Established an AWS security baseline: complete isolation of Root User, centralized access control via `FCAJ-Admin` group and `aotam_admin` user.
+* Gained a solid grasp of long-term credentials (IAM Users) vs. short-term STS tokens (IAM Roles), laying the foundation for cross-service authorization between S3 and Redshift.
+
+### References:
+* <https://cloudjourney.awsstudygroup.com/>
+* <https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html>
+* <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html>
