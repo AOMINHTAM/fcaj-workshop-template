@@ -5,9 +5,9 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-This section documents professional seminars, tech talks, and community events attended during the internship journey.
+This section records professional technical workshops, conferences, and community events attended throughout the internship journey.
 
-### 📌 Events List:
+### 📌 Event Index:
 - **[Event 1: Buildrathon Kickoff: Code The Future With CMC Global](4.1_event_01/)** ✅
 - **[Event 2: AWS First Cloud AI Journey Community Day 2026](4.2_event_02/)** ✅
-- **[Event 3: Coming Soon](4.3_event_03/)** ⏳
+- **[Event 3: AWS Student Community Day Vietnam 2026](4.3_event_03/)** ✅
