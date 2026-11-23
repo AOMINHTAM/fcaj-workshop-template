@@ -5,10 +5,10 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-### ⏳ Coming Soon
+Technical articles and hands-on AWS engineering write-ups shared with the **AWS Study Group VN (First Cloud AI Journey)** community.
 
-Technical blog posts and in-depth articles shared with the AWS Study Group community will be published here.
+### 📝 Published & Upcoming Blog Posts:
 
-- **Blog 1:** Coming soon
-- **Blog 2:** Coming soon
-- **Blog 3:** Coming soon
+* **Blog 1:** [Migrating a Data Pipeline from Snowflake to AWS S3 & Redshift Serverless](3.1_blog_01/) ✅ *(Published Nov 11, 2026 on [AWS Study Group VN](https://www.facebook.com/groups/awsstudygroupfcj/permalink/2334049077360051/))*
+* **Blog 2:** [Coming soon](3.2_blog_02/) ⏳
+* **Blog 3:** [Coming soon](3.3_blog_03/) ⏳
