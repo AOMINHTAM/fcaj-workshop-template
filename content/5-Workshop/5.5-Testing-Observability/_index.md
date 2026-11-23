@@ -58,18 +58,21 @@ Every push/PR to `main` executes `.github/workflows/ci.yml` at `$0` AWS cost:
 
 ### 4. Cost Estimation & FinOps Optimization (AWS Pricing Calculator)
 
-> **Pre-Submission Action (Mandatory for Presentation Score):** Generate an official estimate on [AWS Pricing Calculator](https://calculator.aws/) matching the configuration below, paste the shareable URL here, and save a screenshot to `static/images/workshop/aws_pricing_calculator.png`.
+Official cost estimate built on **[AWS Pricing Calculator](https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef)** (`us-east-1`, Upfront `$0.00`, List Total **`$3.51 USD/month`** / **`$42.12 USD/12 months`**):
 
-| AWS Service | Sized Configuration | Est. Monthly Cost | FinOps Optimization Applied |
+| AWS Service | Sized Configuration (Pricing Calculator) | List Monthly Cost | FinOps Optimization Applied |
 | :--- | :--- | :---: | :--- |
-| **AWS CloudFormation & IAM** | 1 Stack (15–19 resources) | `$0.00` | Free of charge; deterministic teardown prevents orphaned resources. |
-| **Amazon S3 (Standard + Versioning)** | ~120 MB data + archive | `~$0.003` | Lifecycle expires `archive/` in 90d, noncurrent versions in 30d, incomplete multiparts in 7d. |
-| **Amazon SQS (Main + DLQ)** | ≤ 104k requests/month | `$0.00` | Well within 1M Always Free requests; 20s Long Polling; `0` reqs after `astro dev stop`. |
-| **Amazon CloudWatch & SNS** | 4 Standard Alarms + Email | `$0.00` | Within Always Free tier (10 Standard Alarms + 1,000 emails/month). |
-| **Amazon Redshift Serverless** | 4 RPUs (~1–2 RPU-hours/mo) | `~$0.75 – $1.50` | Auto-sleeps at `$0` idle; `DeployRedshift=false` toggle; paused full-refresh DAG; offline CSV `exports/`. |
+| **Amazon S3 (S3 Standard)** | 1 GB + 1,000 PUT/COPY/LIST + 5,000 GET | `$0.03` | Lifecycle expires `archive/` in 90d, noncurrent versions in 30d, incomplete multiparts in 7d. |
+| **Amazon SQS (Main + DLQ)** | Standard Queue 0.15M requests/month | `$0.06` | Effectively `$0.00` under 1M Always Free requests; 20s Long Polling; `0` reqs after `astro dev stop`. |
+| **Amazon CloudWatch** | 4 Standard-Resolution Alarm Metrics | `$0.40` | Effectively `$0.00` under 10 free Standard Alarms/month. |
+| **Amazon SNS** | 100 Email/Email-JSON Notifications | `$0.00` | Free within 1,000 email notifications/month. |
+| **Amazon Redshift Serverless** | 4 Base RPUs (`0.0656h/day` ≈ 2h/month) + 1 GB Storage | `$3.02` | Auto-sleeps at `$0` idle; `DeployRedshift=false` toggle; paused full-refresh DAG; offline CSV `exports/`. |
+| **Total (Pricing Calculator)** | **AWS Budgets Alert `$5.00/month`** | **`$3.51 / month`** | **Effective net spend after Always Free `~$3.02/mo` (covered by `$200` Credit)** |
 
-* **Official AWS Pricing Calculator Estimate Link:** *(Paste your `https://calculator.aws/` share link here)*
-* **AWS Pricing Calculator Screenshot:** *(Pending `static/images/workshop/aws_pricing_calculator.png`)*
+* **Official AWS Pricing Calculator Estimate Link:** <https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef>
+* **Exported Calculator Reports:** [Official PDF](/fcaj-workshop-template/files/aws_pricing_calculator.pdf) | [Detailed CSV](/fcaj-workshop-template/files/aws_pricing_calculator.csv)
+
+![AWS Pricing Calculator Cost Estimate Screenshot](/fcaj-workshop-template/images/workshop/aws_pricing_calculator.png)
 
 ---
 

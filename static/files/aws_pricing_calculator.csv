@@ -1,0 +1,19 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,3.51,42.12,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+AWS E-Commerce Modern Data Pipeline V5 (FCAJ),US East (N. Virginia),,S3 Standard,0,0.03,0.36,USD,,"S3 Standard storage (1 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (1000), GET, SELECT, and all other requests from S3 Standard (5000)"
+AWS E-Commerce Modern Data Pipeline V5 (FCAJ),US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
+AWS E-Commerce Modern Data Pipeline V5 (FCAJ),US East (N. Virginia),,Amazon Simple Queue Service (SQS),0,0.06,0.72,USD,,Standard queue requests (0.15 million per month)
+AWS E-Commerce Modern Data Pipeline V5 (FCAJ),US East (N. Virginia),,Amazon CloudWatch,0,0.4,4.80,USD,,"Number of mobile OTEL events and spans or spans per visit (70), Mobile sampling rate (1), Number of Standard Resolution Alarm Metrics (4)"
+AWS E-Commerce Modern Data Pipeline V5 (FCAJ),US East (N. Virginia),,Standard topics,0,0,0.00,USD,,EMAIL/EMAIL-JSON Notifications (100 per month)
+AWS E-Commerce Modern Data Pipeline V5 (FCAJ),US East (N. Virginia),,Amazon Redshift,0,3.02,36.24,USD,,"Base RPU (4), Expected daily runtime (hours) (0.0656), Managed storage size (1 GB)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

@@ -62,20 +62,22 @@ Trong hệ thống thương mại điện tử thực tế (như sàn Olist), d�
 
 ### 6. Dự toán ngân sách & Chi phí AWS (Cost Estimation & FinOps)
 
-> **Lưu ý nộp bài (AWS Pricing Calculator):** Bảng dưới đây là định mức FinOps thực tế của stack V5 (`DeployRedshift=false` hoặc dùng Redshift 4 RPUs theo nhu cầu). Trước khi nộp Portal, cần chèn **link share và ảnh chụp bảng dự toán từ [AWS Pricing Calculator](https://calculator.aws/)** vào mục bên dưới.
+Bảng dự toán chính thức được lập trên **[AWS Pricing Calculator](https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef)** tại Region **`us-east-1` (US East — N. Virginia)** cho toàn bộ 5 nhóm dịch vụ vận hành V5:
 
-| Dịch vụ AWS | Quy mô sử dụng dự kiến / tháng | Hạn mức Always Free | Chi phí ước tính / tháng |
-| :--- | :--- | :--- | :---: |
-| **AWS CloudFormation & IAM** | 1 Stack (15–19 resources), 3 nhóm IAM | Miễn phí 100% | `$0.00` |
-| **Amazon S3 (Standard + Versioning)** | ~120 MB dữ liệu Olist + archive (Lifecycle 30/90 ngày) | Theo GB (`$0.023/GB`) | `~$0.003` |
-| **Amazon SQS (Main + DLQ)** | ~103.680 requests (nếu bật polling 24/7; `0` khi `astro dev stop`) | 1.000.000 requests/tháng | `$0.00` |
-| **Amazon CloudWatch Alarms** | 4 Standard-resolution Alarms (`Period >= 60s`) | 10 Standard Alarms | `$0.00` |
-| **Amazon SNS (Email)** | < 50 email cảnh báo/tháng | 1.000 email/tháng | `$0.00` |
-| **Amazon Redshift Serverless (4 RPUs)** | ~1–2 RPU-hours/tháng cho batch nạp & dbt (tự ngủ khi idle) + ~0.2 GB Managed Storage | Tính theo sử dụng thực tế | `~$0.75 – $1.50` *(trong `$200` Credit)* |
-| **Tổng cộng dự kiến** | **Vận hành học tập & demo thực tế** | **AWS Budgets cảnh báo `$5/tháng`** | **`< $2.00 / tháng`** |
+| Dịch vụ AWS | Cấu hình nhập trên AWS Pricing Calculator | Chi phí chuẩn / tháng | Chi phí 12 tháng | Thực tế áp dụng Always Free / Credit |
+| :--- | :--- | :---: | :---: | :--- |
+| **Amazon S3 (S3 Standard)** | 1 GB/tháng + 1.000 PUT/COPY/LIST + 5.000 GET/SELECT | `$0.03` | `$0.36` | `~$0.003` cho ~120 MB Olist + Lifecycle 30/90 ngày |
+| **Amazon SQS** | Standard queue: 0.15 triệu requests/tháng | `$0.06` | `$0.72` | `$0.00` (nằm gọn trong 1 triệu requests/tháng Free Tier) |
+| **Amazon CloudWatch** | 4 Standard-Resolution Alarm Metrics | `$0.40` | `$4.80` | `$0.00` (nằm trong 10 Standard Alarms miễn phí/tháng) |
+| **Amazon SNS** | 100 Email/Email-JSON Notifications/tháng | `$0.00` | `$0.00` | `$0.00` (miễn phí 1.000 emails/tháng) |
+| **Amazon Redshift Serverless** | 4 Base RPUs (`0.0656h/ngày` ≈ 2h/tháng) + 1 GB Managed Storage | `$3.02` | `$36.24` | Tự ngủ `$0` khi idle; chi trả từ `$200` AWS Credit |
+| **AWS CloudFormation & IAM** | 1 Stack (15–19 resources) & 3 nhóm IAM | `$0.00` | `$0.00` | Miễn phí 100% |
+| **Tổng cộng (Pricing Calculator)** | **Upfront `$0.00`** • **Ngân sách AWS Budgets `$5.00/tháng`** | **`$3.51 / tháng`** | **`$42.12 / năm`** | **Thực chi sau Free Tier chỉ `~$3.02/tháng` (từ Credit)** |
 
-* **Liên kết dự toán chính thức (AWS Pricing Calculator):** *(Đang chờ gắn link estimate từ `https://calculator.aws/`)*
-* **Ảnh chụp bảng ước tính AWS Pricing Calculator:** *(Lưu tại `static/images/workshop/aws_pricing_calculator.png` sau khi xuất)*
+* **Liên kết dự toán chính thức (AWS Pricing Calculator):** <https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef>
+* **Tài liệu xuất từ Calculator:** [Tải PDF chính thức](/fcaj-workshop-template/files/aws_pricing_calculator.pdf) | [Tải CSV chi tiết](/fcaj-workshop-template/files/aws_pricing_calculator.csv)
+
+![Bảng dự toán chi phí AWS Pricing Calculator cho dự án V5](/fcaj-workshop-template/images/workshop/aws_pricing_calculator.png)
 
 ---
 

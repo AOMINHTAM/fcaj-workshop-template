@@ -58,18 +58,21 @@ Trên mọi Push/PR vào nhánh `main`, GitHub Actions (`.github/workflows/ci.ym
 
 ### 4. Dự toán Chi phí & Tối ưu hóa FinOps (AWS Pricing Calculator)
 
-> **Lưu ý hoàn thiện trước khi nộp Portal (Tránh 0 điểm mục Trình bày):** Hãy tạo bảng ước tính trực tiếp trên [AWS Pricing Calculator](https://calculator.aws/) cho cấu hình bên dưới, dán link chia sẻ (Share link) và lưu ảnh chụp vào `static/images/workshop/aws_pricing_calculator.png`.
+Bảng dự toán chính thức lập trên **[AWS Pricing Calculator](https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef)** (`us-east-1`, Upfront `$0.00`, Tổng giá niêm yết **`$3.51 USD/tháng`** / **`$42.12 USD/12 tháng`**):
 
-| Dịch vụ AWS | Cấu hình tính phí | Chi phí ước tính / tháng | Chiến lược tối ưu FinOps đã áp dụng |
+| Dịch vụ AWS | Cấu hình tính phí (Pricing Calculator) | Giá niêm yết / tháng | Chiến lược tối ưu FinOps đã áp dụng |
 | :--- | :--- | :---: | :--- |
-| **AWS CloudFormation & IAM** | 1 Stack (15–19 resources) | `$0.00` | Miễn phí hoàn toàn; tái lập & xóa nhanh tránh bỏ quên tài nguyên. |
-| **Amazon S3 (Standard + Versioning)** | ~120 MB dữ liệu + archive | `~$0.003` | Lifecycle hết hạn `archive/` 90 ngày, xóa old versions sau 30 ngày & multipart treo sau 7 ngày. |
-| **Amazon SQS (Main + DLQ)** | ≤ 104k requests/tháng | `$0.00` | Nằm trong Always Free 1 triệu requests; Long Polling 20s; `0` reqs khi `astro dev stop`. |
-| **Amazon CloudWatch & SNS** | 4 Standard Alarms + Email | `$0.00` | Nằm trong Always Free (10 Alarms + 1.000 emails/tháng). |
-| **Amazon Redshift Serverless** | 4 RPUs (~1–2 RPU-hours/tháng) | `~$0.75 – $1.50` | Tự ngủ `$0` khi idle; `DeployRedshift=false` mặc định; DAG full-refresh `Paused`; tách BI qua CSV `exports/`. |
+| **Amazon S3 (S3 Standard)** | 1 GB + 1.000 PUT/COPY/LIST + 5.000 GET | `$0.03` | Lifecycle hết hạn `archive/` 90 ngày, xóa old versions sau 30 ngày & multipart treo sau 7 ngày. |
+| **Amazon SQS (Main + DLQ)** | Standard Queue 0.15M requests/tháng | `$0.06` | Thực tế `$0.00` trong Always Free 1 triệu requests; Long Polling 20s; `0` reqs khi `astro dev stop`. |
+| **Amazon CloudWatch** | 4 Standard-Resolution Alarm Metrics | `$0.40` | Thực tế `$0.00` trong hạn mức 10 Standard Alarms miễn phí/tháng. |
+| **Amazon SNS** | 100 Email/Email-JSON Notifications | `$0.00` | Miễn phí 1.000 emails/tháng. |
+| **Amazon Redshift Serverless** | 4 Base RPUs (`0.0656h/ngày` ≈ 2h/tháng) + 1 GB Storage | `$3.02` | Tự ngủ `$0` khi idle; `DeployRedshift=false` mặc định; DAG full-refresh `Paused`; tách BI qua CSV `exports/`. |
+| **Tổng cộng (Pricing Calculator)** | **Ngân sách AWS Budgets `$5.00/tháng`** | **`$3.51 / tháng`** | **Sau Always Free còn `~$3.02/tháng` (được chi trả từ `$200` Credit)** |
 
-* **Link ước tính AWS Pricing Calculator:** *(Chèn link share từ `https://calculator.aws/` tại đây)*
-* **Ảnh chụp AWS Pricing Calculator:** *(Đang chờ bổ sung `static/images/workshop/aws_pricing_calculator.png`)*
+* **Link ước tính AWS Pricing Calculator chính thức:** <https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef>
+* **Tài liệu xuất từ AWS Pricing Calculator:** [PDF chính thức](/fcaj-workshop-template/files/aws_pricing_calculator.pdf) | [CSV chi tiết](/fcaj-workshop-template/files/aws_pricing_calculator.csv)
+
+![Ảnh chụp bảng dự toán AWS Pricing Calculator](/fcaj-workshop-template/images/workshop/aws_pricing_calculator.png)
 
 ---
 

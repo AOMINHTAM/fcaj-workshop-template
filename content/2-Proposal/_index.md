@@ -62,20 +62,22 @@ Raw operational exports from an e-commerce marketplace (such as Olist) arrive as
 
 ### 6. Budget & AWS Cost Estimation (FinOps)
 
-> **Submission Reminder (AWS Pricing Calculator):** The table below summarizes actual FinOps operating costs for the V5 stack. Prior to Portal submission, attach the **official shareable link and screenshot from [AWS Pricing Calculator](https://calculator.aws/)** in the slot below.
+Official cost estimate built on **[AWS Pricing Calculator](https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef)** in **`us-east-1` (US East — N. Virginia)** covering all V5 pipeline services:
 
-| AWS Service | Expected Monthly Usage | Always Free Allowance | Estimated Monthly Cost |
-| :--- | :--- | :--- | :---: |
-| **AWS CloudFormation & IAM** | 1 Stack (15–19 resources), 3 IAM groups | 100% Free | `$0.00` |
-| **Amazon S3 (Standard + Versioning)** | ~120 MB Olist data + archive (30/90-day Lifecycle) | Pay-per-GB (`$0.023/GB`) | `~$0.003` |
-| **Amazon SQS (Main + DLQ)** | ~103,680 requests (24/7 polling; `0` when `astro dev stop`) | 1,000,000 requests/month | `$0.00` |
-| **Amazon CloudWatch Alarms** | 4 Standard-resolution Alarms (`Period >= 60s`) | 10 Standard Alarms | `$0.00` |
-| **Amazon SNS (Email)** | < 50 alert emails/month | 1,000 emails/month | `$0.00` |
-| **Amazon Redshift Serverless (4 RPUs)** | ~1–2 RPU-hours/month for batch loads & dbt (`$0` idle) + ~0.2 GB Managed Storage | Pay-as-you-go | `~$0.75 – $1.50` *(covered by `$200` Credit)* |
-| **Estimated Total** | **Active learning & live demo workload** | **AWS Budgets alert at `$5/month`** | **`< $2.00 / month`** |
+| AWS Service | Sized Configuration in Calculator | List Monthly Cost | 12-Month Cost | Effective Spend w/ Always Free & Credits |
+| :--- | :--- | :---: | :---: | :--- |
+| **Amazon S3 (S3 Standard)** | 1 GB/month + 1,000 PUT/COPY/LIST + 5,000 GET/SELECT | `$0.03` | `$0.36` | `~$0.003` for ~120 MB Olist + 30/90-day Lifecycle |
+| **Amazon SQS** | Standard queue: 0.15 million requests/month | `$0.06` | `$0.72` | `$0.00` (within 1M requests/month Free Tier) |
+| **Amazon CloudWatch** | 4 Standard-Resolution Alarm Metrics | `$0.40` | `$4.80` | `$0.00` (within 10 free Standard Alarms/month) |
+| **Amazon SNS** | 100 Email/Email-JSON Notifications/month | `$0.00` | `$0.00` | `$0.00` (1,000 free email notifications/month) |
+| **Amazon Redshift Serverless** | 4 Base RPUs (`0.0656h/day` ≈ 2h/month) + 1 GB Managed Storage | `$3.02` | `$36.24` | Auto-sleeps `$0` idle; covered by `$200` AWS Credits |
+| **AWS CloudFormation & IAM** | 1 Stack (15–19 resources) & 3 IAM groups | `$0.00` | `$0.00` | 100% Free |
+| **Total (Pricing Calculator)** | **Upfront `$0.00`** • **AWS Budgets Alert `$5.00/mo`** | **`$3.51 / month`** | **`$42.12 / year`** | **Effective net spend after Free Tier `~$3.02/mo`** |
 
-* **Official AWS Pricing Calculator Link:** *(Pending shareable estimate link from `https://calculator.aws/`)*
-* **AWS Pricing Calculator Screenshot:** *(Save to `static/images/workshop/aws_pricing_calculator.png` once exported)*
+* **Official AWS Pricing Calculator Link:** <https://calculator.aws/#/estimate?id=77a934d9011f072f5b013defff9c61ac61f895ef>
+* **Exported Calculator Reports:** [Download Official PDF](/fcaj-workshop-template/files/aws_pricing_calculator.pdf) | [Download Detailed CSV](/fcaj-workshop-template/files/aws_pricing_calculator.csv)
+
+![AWS Pricing Calculator Cost Estimate for V5 Data Pipeline](/fcaj-workshop-template/images/workshop/aws_pricing_calculator.png)
 
 ---
 
