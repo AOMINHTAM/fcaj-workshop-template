@@ -16,4 +16,16 @@ pre: " <b> 4.2. </b> "
 - **Community Networking:** Connected and engaged in meaningful discussions with AWS speakers, mentors, and fellow tech-enthusiast students within the AWS ecosystem.
 - **Career & Personal Growth:** Gained clarity on core skill sets required for modern Cloud and Data Engineering, drawing actionable inspiration to navigate the upcoming professional journey.
 
-> *(Check-in photo with clear portrait saved at: `static/images/events/community-day-2026.jpg`)*
+### 💡 Personal Takeaways & Reflection
+* The event highlighted how production enterprises evaluate Cloud, AI, and Data architectures: shipping a working prototype is only the start—**Reliability, Least-Privilege Security, and FinOps Cost Optimization** define production readiness.
+* Discussions with AWS speakers and community mentors gave me concrete direction to evolve my Olist Data Pipeline from a manual baseline (V2) into an event-driven, CloudFormation-managed architecture in the following weeks.
+
+---
+
+### 📸 Event Check-in Photos
+
+![Clear-face check-in photo at AWS First Cloud AI Journey Community Day 2026](/fcaj-workshop-template/images/events/community-day-2026-checkin.jpg)
+
+![Session on getting started with AWS](/fcaj-workshop-template/images/events/community-day-2026-session-1.jpg)
+
+![Technical session on shared test caching](/fcaj-workshop-template/images/events/community-day-2026-session-2.jpg)

@@ -22,8 +22,14 @@ pre: " <b> 4.1. </b> "
 - Kết nối cùng các mentor FCAJ, các chuyên gia công nghệ từ CMC Global và các bạn học viên trong cộng đồng AWS Study Group.
 
 ### 💡 Bài học rút ra & Cảm nhận cá nhân
-*(Viết cảm nhận và bài học của bạn tại đây...)*
+* Buổi Kickoff giúp mình nhìn rõ bức tranh tổng thể của kỳ thực tập 12 tuần tại FCAJ: không dừng lại ở việc xem lý thuyết dịch vụ AWS mà phải **xây dựng được sản phẩm thực tế có kiến trúc bài bản, kiểm soát chi phí (FinOps) và chứng minh bằng kết quả chạy thật**.
+* Ấn tượng mạnh với tinh thần thực chiến từ các mentor FCAJ và Tech Lead CMC Global — đây cũng là động lực giúp mình chốt ngay định hướng **Data & Analytics** và lên kế hoạch dựng dự án **AWS E-Commerce Modern Data Pipeline** xuyên suốt kỳ thực tập.
+* Hiểu rõ quy chuẩn trình bày báo cáo song ngữ, kỷ luật văn phòng và các mốc cần chuẩn bị sớm (Blog cộng đồng, Event, Workshop) để chủ động tiến độ từ tuần đầu tiên.
 
 ---
 
-> *(Hình ảnh check-in rõ mặt tham dự sự kiện lưu tại: `static/images/events/kickoff-2026.jpg`)*
+### 📸 Hình ảnh check-in tham dự sự kiện
+
+![Ảnh check-in rõ mặt tại Buildrathon Kickoff 2026](/fcaj-workshop-template/images/events/kickoff-2026-checkin.jpg)
+
+![Không gian hội trường lễ khai mạc AWS First Cloud AI Journey](/fcaj-workshop-template/images/events/kickoff-2026-hall.jpg)

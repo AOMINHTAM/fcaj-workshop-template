@@ -16,4 +16,16 @@ pre: " <b> 4.2. </b> "
 - **Kết nối cộng đồng:** Giao lưu, thảo luận trực tiếp cùng các diễn giả, mentor và cộng đồng sinh viên công nghệ, mở rộng mạng lưới quan hệ trong hệ sinh thái AWS.
 - **Định hướng phát triển:** Nhận diện những kỹ năng cốt lõi cần trau dồi, tìm kiếm cảm hứng học tập và định hình rõ nét lộ trình phát triển bản thân cho chặng đường nghề nghiệp Cloud / Data Engineering phía trước.
 
-> *(Hình ảnh check-in rõ mặt tham dự sự kiện lưu tại: `static/images/events/community-day-2026.jpg`)*
+### 💡 Bài học rút ra & Cảm nhận cá nhân
+* Sự kiện mang lại góc nhìn sát thực tế về cách các doanh nghiệp triển khai Cloud, AI và Data ở quy mô vận hành (Production): yếu tố tạo nên khác biệt không chỉ là chạy được tính năng mà là **tính ổn định (Reliability), bảo mật phân quyền (Least-Privilege IAM) và tối ưu chi phí (Cost Optimization)**.
+* Trực tiếp lắng nghe và trao đổi cùng các chuyên gia giúp mình tự tin hơn khi nâng cấp dự án Olist Data Pipeline từ mức chạy batch cơ bản (V2) lên kiến trúc hướng sự kiện (Event-Driven) và CloudFormation IaC ở các tuần kế tiếp.
+
+---
+
+### 📸 Hình ảnh check-in tham dự sự kiện
+
+![Ảnh check-in rõ mặt tại AWS First Cloud AI Journey Community Day 2026](/fcaj-workshop-template/images/events/community-day-2026-checkin.jpg)
+
+![Phiên chia sẻ định hướng bắt đầu với AWS](/fcaj-workshop-template/images/events/community-day-2026-session-1.jpg)
+
+![Phiên chia sẻ kỹ thuật về chia sẻ bộ nhớ đệm kiểm thử](/fcaj-workshop-template/images/events/community-day-2026-session-2.jpg)

@@ -24,8 +24,12 @@ pre: " <b> 4.3. </b> "
 * **Ghi nhận điểm OJT Portal:** Hoàn tất thủ tục đăng ký và đối chiếu điểm tham dự sự kiện trên hệ thống Portal FCAJ phục vụ đánh giá hoàn thành OJT.
 
 ### 💡 Bài học rút ra & Cảm nhận cá nhân
-*(Viết cảm nhận và bài học của bạn tại đây...)*
+* Không khí sôi nổi của ngày hội sinh viên Cloud & AI do liên minh các AWS Student Builder Groups (SGU, HUFLIT, PTIT HCM, HCMUTE) đồng tổ chức cho thấy sức lan tỏa mạnh mẽ của cộng đồng Cloud tại Việt Nam.
+* Các phiên chia sẻ thực chiến giúp mình cập nhật thêm tư duy kết hợp Cloud Infrastructure với AI/Data hiện đại, đồng thời mở rộng mạng lưới kết nối với các bạn sinh viên đam mê kỹ thuật và các anh chị mentor tại văn phòng AWS tầng 26 Bitexco.
+* Hoàn tất đủ mốc **3/3 sự kiện cộng đồng bắt buộc** của chương trình FCAJ cùng hình ảnh check-in rõ mặt và ghi nhận trên hệ thống OJT Portal.
 
----
+### 📸 Hình ảnh check-in tham dự sự kiện
 
-> *(Hình ảnh check-in rõ mặt tham dự sự kiện lưu tại: `static/images/events/student-community-day-2026.jpg`)*
+![Ảnh check-in rõ mặt tại AWS Student Community Day Vietnam 2026](/fcaj-workshop-template/images/events/student-community-day-2026-checkin.jpg)
+
+![Không gian hội trường và các đơn vị đồng hành tại văn phòng AWS Bitexco](/fcaj-workshop-template/images/events/student-community-day-2026-stage.jpg)

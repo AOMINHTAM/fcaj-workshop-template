@@ -22,8 +22,14 @@ pre: " <b> 4.1. </b> "
 - Networking session with FCAJ mentors, CMC Global tech leads, and fellow learners within the AWS Study Group community.
 
 ### 💡 Personal Takeaways & Reflection
-*(Write your personal reflection and takeaways here...)*
+* The Kickoff gave me a crystal-clear roadmap for the 12-week FCAJ internship: going beyond watching AWS tutorials to **building a real, well-architected, FinOps-governed solution backed by live execution evidence**.
+* The hands-on builder mindset shared by FCAJ mentors and CMC Global tech leads directly inspired me to commit to the **Data & Analytics** track and plan an end-to-end **AWS E-Commerce Modern Data Pipeline** as my flagship project.
+* Clarifying bilingual reporting standards, office discipline, and graduation milestones early allowed me to structure my weekly worklog and deliverables proactively from Week 1.
 
 ---
 
-> *(Check-in photo with clear portrait saved at: `static/images/events/kickoff-2026.jpg`)*
+### 📸 Event Check-in Photos
+
+![Clear-face check-in photo at Buildrathon Kickoff 2026](/fcaj-workshop-template/images/events/kickoff-2026-checkin.jpg)
+
+![Main Event Hall at AWS First Cloud AI Journey Kickoff](/fcaj-workshop-template/images/events/kickoff-2026-hall.jpg)

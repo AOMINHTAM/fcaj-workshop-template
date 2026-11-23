@@ -24,8 +24,12 @@ pre: " <b> 4.3. </b> "
 * **FCAJ OJT Portal Accreditation:** Successfully completed event registration and attendance check-in on the FCAJ Portal for formal internship fulfillment validation.
 
 ### 💡 Key Takeaways & Personal Reflections
-*(Write your takeaways and reflections here...)*
+* The energetic atmosphere co-organized by the AWS Student Builder Groups Alliance (SGU, HUFLIT, PTIT HCM, HCMUTE) showcased how vibrant and collaborative Vietnam's student Cloud & AI ecosystem has become.
+* Practical sessions reinforced how modern Cloud Infrastructure intersects with Data & AI workloads, while networking directly with peers and mentors at the 26th Floor AWS Office in Bitexco broadened my technical community.
+* Completed my **3/3 mandatory community events** milestone for the FCAJ program with verified portrait check-in and OJT Portal accreditation.
 
----
+### 📸 Event Check-in Photos
 
-> *(Check-in photo with clear portrait saved at: `static/images/events/student-community-day-2026.jpg`)*
+![Clear-face check-in photo at AWS Student Community Day Vietnam 2026](/fcaj-workshop-template/images/events/student-community-day-2026-checkin.jpg)
+
+![Event Hall and co-organizing AWS Student Builder Group partners at Bitexco](/fcaj-workshop-template/images/events/student-community-day-2026-stage.jpg)
