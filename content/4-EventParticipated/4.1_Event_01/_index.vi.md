@@ -16,15 +16,15 @@ pre: " <b> 4.1. </b> "
 - **Vai trò:** Học viên tham dự (Data & Analytics Track)
 
 ### 📌 Nội dung sự kiện
-- Lễ khai mạc chương trình thực tập Workforce Bootcamp kết hợp cùng cuộc thi Buildrathon.
-- Lắng nghe chia sẻ định hướng: *"Don't just learn Cloud & AI for knowledge — build real products, gain lifelong teammates, and make your mark in the tech world."*
-- Giới thiệu thể lệ, quy chế đào tạo, tiêu chí đánh giá hoàn thành khóa thực tập và định hướng chuyên môn Cloud, AI & Data.
-- Kết nối cùng các mentor FCAJ, các chuyên gia công nghệ từ CMC Global và các bạn học viên trong cộng đồng AWS Study Group.
+- Buổi khai mạc chương trình thực tập Workforce Bootcamp kết hợp phát động cuộc thi Buildrathon.
+- Thông điệp chính từ buổi mở đầu: *"Don't just learn Cloud & AI for knowledge — build real products, gain lifelong teammates, and make your mark in the tech world."*
+- Phổ biến nội quy văn phòng, tiêu chí đánh giá hoàn thành kỳ thực tập và định hướng các nhánh chuyên môn (Cloud, AI, Data & Analytics).
+- Gặp gỡ, làm quen với các anh mentor FCAJ, đại diện kỹ thuật từ CMC Global và các bạn học viên cùng khóa.
 
 ### 💡 Bài học rút ra & Cảm nhận cá nhân
-* Buổi Kickoff giúp mình nhìn rõ bức tranh tổng thể của kỳ thực tập 12 tuần tại FCAJ: không dừng lại ở việc xem lý thuyết dịch vụ AWS mà phải **xây dựng được sản phẩm thực tế có kiến trúc bài bản, kiểm soát chi phí (FinOps) và chứng minh bằng kết quả chạy thật**.
-* Ấn tượng mạnh với tinh thần thực chiến từ các mentor FCAJ và Tech Lead CMC Global — đây cũng là động lực giúp mình chốt ngay định hướng **Data & Analytics** và lên kế hoạch dựng dự án **AWS E-Commerce Modern Data Pipeline** xuyên suốt kỳ thực tập.
-* Hiểu rõ quy chuẩn trình bày báo cáo song ngữ, kỷ luật văn phòng và các mốc cần chuẩn bị sớm (Blog cộng đồng, Event, Workshop) để chủ động tiến độ từ tuần đầu tiên.
+* Buổi Kickoff giúp mình nắm rõ yêu cầu của kỳ thực tập 12 tuần: không chỉ học lý thuyết dịch vụ AWS mà phải làm được sản phẩm chạy thật, kiểm soát được chi phí và có minh chứng rõ ràng.
+* Qua phần chia sẻ của các anh mentor FCAJ và Tech Lead bên CMC Global, mình chốt hướng đi theo **Data & Analytics** và lên ý tưởng làm pipeline dữ liệu thương mại điện tử trên AWS làm đồ án chính.
+* Nhờ được phổ biến sớm cách viết báo cáo song ngữ và các mốc bắt buộc (3 blog, 3 sự kiện, workshop cuối kỳ), mình chủ động sắp xếp worklog ngay từ tuần đầu, tránh dồn việc về cuối.
 
 ---
 

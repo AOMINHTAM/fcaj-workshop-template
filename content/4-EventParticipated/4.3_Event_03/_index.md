@@ -16,17 +16,16 @@ pre: " <b> 4.3. </b> "
 - **Registration Link:** <https://www.meetup.com/aws-sbg-at-hcmc/events/317238332/>
 - **Role:** Student Attendee (OJT Intern - Data & Analytics Track, FCAJ)
 
-### 📌 Event Highlights & Key Takeaways
-* **Premier Student Cloud & AI Gathering:** Attended the largest annual student technology convention dedicated to Cloud Computing and Artificial Intelligence in Vietnam, organized by the AWS Student Builder Groups Alliance.
-* **Industry-grade Practical Knowledge:** Gained practical insights from experienced professionals on emerging Cloud & AI architectures, modern practices, and real-world deployment patterns.
-* **Inter-University Community Networking:** Connected and engaged directly with peers from multiple university AWS Student Builder Groups (HUFLIT, HCMUTE, PTIT, SGU) and the broader engineering community in Ho Chi Minh City.
-* **Interactive Q&A & Community Minigames:** Participated in technical Q&A discussions with keynote speakers, interactive challenges, and exclusive giveaway activities.
-* **FCAJ OJT Portal Accreditation:** Successfully completed event registration and attendance check-in on the FCAJ Portal for formal internship fulfillment validation.
+### 📌 Event Content
+* **Student-Led Community Event:** Joined the AWS Student Community Day co-organized by four university AWS Student Builder Groups (SGU, HUFLIT, PTIT HCM, and HCMUTE) right at the 26th-floor Bitexco office.
+* **Tech Talks & Sharing:** Listened to speakers share practical experiences around Cloud & AI applications and how students can prepare their portfolios before applying for junior roles.
+* **Q&A, Minigames & Networking:** Joined the Q&A and minigame segments, and chatted with students from different universities about how they organize their projects and workshops.
+* **OJT Portal Check-in:** Completed the attendance check-in on the FCAJ Portal as part of the internship requirements.
 
-### 💡 Key Takeaways & Personal Reflections
-* The energetic atmosphere co-organized by the AWS Student Builder Groups Alliance (SGU, HUFLIT, PTIT HCM, HCMUTE) showcased how vibrant and collaborative Vietnam's student Cloud & AI ecosystem has become.
-* Practical sessions reinforced how modern Cloud Infrastructure intersects with Data & AI workloads, while networking directly with peers and mentors at the 26th Floor AWS Office in Bitexco broadened my technical community.
-* Completed my **3/3 mandatory community events** milestone for the FCAJ program with verified portrait check-in and OJT Portal accreditation.
+### 💡 Takeaways & Personal Notes
+* Seeing student clubs across four universities collaborate to run an event at the AWS office was a cool experience and made the session feel very open and approachable.
+* The Q&A reminded me that having a working GitHub repo with clear documentation matters much more for junior/intern roles than listing too many buzzwords on a CV.
+* With this event, I finished the **3/3 required community events** for the FCAJ program with check-in photos and Portal confirmation.
 
 ### 📸 Event Check-in Photos
 

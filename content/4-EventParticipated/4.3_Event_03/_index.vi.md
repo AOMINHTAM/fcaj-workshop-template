@@ -16,17 +16,16 @@ pre: " <b> 4.3. </b> "
 - **Đăng ký tham gia:** <https://www.meetup.com/aws-sbg-at-hcmc/events/317238332/>
 - **Vai trò:** Học viên tham dự (OJT Intern - Data & Analytics Track, FCAJ)
 
-### 📌 Nội dung & Trải nghiệm sự kiện
-* **Ngày hội công nghệ sinh viên quy mô lớn:** Tham gia ngày hội công nghệ lớn nhất năm dành cho cộng đồng sinh viên đam mê Điện toán đám mây và Trí tuệ nhân tạo (Cloud & AI) tại Việt Nam do liên minh AWS Student Builder Groups đồng tổ chức.
-* **Tiếp cận kiến thức thực chiến:** Lắng nghe các phiên chia sẻ chuyên sâu từ các chuyên gia giàu kinh nghiệm, cập nhật xu hướng công nghệ Cloud & AI mới nhất và bài học áp dụng vào các bài toán thực tế.
-* **Mở rộng kết nối cộng đồng (Networking):** Giao lưu, kết nối và học hỏi trực tiếp cùng các bạn sinh viên công nghệ, các câu lạc bộ AWS Student Builder Groups liên trường (HUFLIT, HCMUTE, PTIT, SGU) và cộng đồng kỹ sư tại TP.HCM.
-* **Giao lưu kỹ thuật & Minigame:** Tham gia các phiên thảo luận hỏi đáp trực tiếp với diễn giả, tham gia minigame công nghệ và săn các phần quà độc quyền từ chương trình.
-* **Ghi nhận điểm OJT Portal:** Hoàn tất thủ tục đăng ký và đối chiếu điểm tham dự sự kiện trên hệ thống Portal FCAJ phục vụ đánh giá hoàn thành OJT.
+### 📌 Nội dung tham dự
+* **Sự kiện do sinh viên đồng tổ chức:** Tham dự buổi AWS Student Community Day do 4 câu lạc bộ AWS Student Builder Groups (SGU, HUFLIT, PTIT HCM, HCMUTE) phối hợp tổ chức ngay tại văn phòng tầng 26 Bitexco.
+* **Các phiên chia sẻ kỹ thuật:** Nghe diễn giả chia sẻ kinh nghiệm làm việc thực tế với Cloud & AI và cách sinh viên chuẩn bị đồ án cá nhân khi đi xin việc hoặc thực tập.
+* **Hỏi đáp, Minigame & Giao lưu:** Tham gia phần đặt câu hỏi, minigame giao lưu và nói chuyện với các bạn sinh viên trường khác về cách triển khai project và viết workshop.
+* **Điểm danh OJT Portal:** Hoàn tất check-in và ghi nhận tham dự sự kiện trên hệ thống Portal FCAJ.
 
 ### 💡 Bài học rút ra & Cảm nhận cá nhân
-* Không khí sôi nổi của ngày hội sinh viên Cloud & AI do liên minh các AWS Student Builder Groups (SGU, HUFLIT, PTIT HCM, HCMUTE) đồng tổ chức cho thấy sức lan tỏa mạnh mẽ của cộng đồng Cloud tại Việt Nam.
-* Các phiên chia sẻ thực chiến giúp mình cập nhật thêm tư duy kết hợp Cloud Infrastructure với AI/Data hiện đại, đồng thời mở rộng mạng lưới kết nối với các bạn sinh viên đam mê kỹ thuật và các anh chị mentor tại văn phòng AWS tầng 26 Bitexco.
-* Hoàn tất đủ mốc **3/3 sự kiện cộng đồng bắt buộc** của chương trình FCAJ cùng hình ảnh check-in rõ mặt và ghi nhận trên hệ thống OJT Portal.
+* Không khí buổi do các bạn sinh viên liên trường tự tổ chức khá gần gũi và cởi mở, dễ bắt chuyện và trao đổi hơn so với các hội thảo lớn bên ngoài.
+* Phần Q&A giúp mình khẳng định thêm một điểm: khi đi phỏng vấn vị trí fresher/intern, có một repo GitHub chạy thật và tài liệu rõ ràng giá trị hơn nhiều so với việc liệt kê thật nhiều tên công nghệ trong CV.
+* Hoàn tất đủ mốc **3/3 sự kiện bắt buộc** của chương trình FCAJ kèm ảnh check-in và ghi nhận trên Portal.
 
 ### 📸 Hình ảnh check-in tham dự sự kiện
 

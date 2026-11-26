@@ -5,23 +5,27 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-### Personal Performance Self-Evaluation (8 FCAJ Criteria)
+### Personal Self-Evaluation (8 FCAJ Criteria)
 
-Throughout the internship at **Amazon Web Services Viet Nam Company Limited** (**Workforce Bootcamp — First Cloud AI Journey 2026**, **Data & Analytics** track), I evaluate my growth across all 8 official FCAJ rubric dimensions:
+When I first joined FCAJ, my main goal was simply to gain some real-world experience and learn as much as I could along the way. Looking back after 3 months at **Amazon Web Services Viet Nam Company Limited**, there are many takeaways, but what I value most is the chance to connect and talk with peers and mentors throughout the program.
 
-| # | Evaluation Criterion | Self-Rating | Concrete Evidence & Reflections |
+Here is my honest self-evaluation across the 8 FCAJ criteria:
+
+| # | Evaluation Criterion | Self-Rating | Honest Notes & Evidence |
 | :-: | :--- | :---: | :--- |
-| **1** | **Technical Knowledge** | **Good** | Mastered core AWS Data Engineering & CloudOps services: IAM Roles/STS, Multi-AZ VPC, S3 (Versioning, Lifecycle, HTTPS Policy), SQS + DLQ, CloudWatch Alarms, SNS, Redshift Serverless (4 RPUs), CloudFormation IaC, dbt Core (Kimball Star Schema, Incremental `delete+insert`), and Apache Airflow 3 (`AssetWatcher`). |
-| **2** | **Self-Learning & Research** | **Good** | Independently studied AWS, dbt, and Airflow 3 Task SDK documentation, iterating my capstone pipeline across 4 architectural generations (V2 → V3 → V4 → V5 `5.0.0`/`5.0.1`) and authoring bilingual deep-dive and operations documentation. |
-| **3** | **Proactiveness** | **Good** | Proactively resolved AWS account verification via AWS Support in Week 1, completed all 5 Explore AWS tasks (`$200` Credit), built automated GitHub Actions CI (`cfn-lint` + `21/21` unit tests), and shared technical write-ups with the AWS Study Group VN community. |
-| **4** | **Discipline & Compliance** | **Good** | Followed 26th-Floor Bitexco office regulations (schedule, dress code, dual Portal check-in/check-out), supported on-site community event logistics in Week 2, and maintained strict FinOps discipline (AWS Budgets and `$0` resource clean-up). |
-| **5** | **Communication** | **Fair / Good** | Documented progress clearly in bilingual VI/EN worklogs and engaged constructively with mentors and peers in AWS Study Group VN; continuing to strengthen live technical presentation and public speaking fluency. |
-| **6** | **Teamwork** | **Fair / Good** | Collaborated smoothly with organizers on event logistics, shared troubleshooting lessons with fellow Data & Analytics interns, and incorporated cross-review feedback to harden 13 edge cases in release `5.0.1`. |
-| **7** | **Problem Solving** | **Good** | Diagnosed and resolved real production-style issues: Cloudflare WARP port `5439` conflicts, 4x `COPY` duplication, dual CloudFormation circular dependencies, `BucketNotEmpty` on versioned S3 stacks, and a live Airflow 3.3 `TriggeringAssetEventsAccessor` (`Mapping` vs. `dict`) bug. |
-| **8** | **Workshop Contribution** | **Good** | Designed custom Draw.io diagrams, built and live-verified `aws-data-pipeline` V5 (`17/17` tasks PASS across Happy Path and DLQ Redrive), and packaged a fully reproducible bilingual 6-chapter Workshop with 1-command `$0` clean-up. |
+| **1** | **Technical Knowledge** | **Fair / Good** | Learned more about Amazon S3, understood how dbt works together with Redshift Serverless, and saw how different AWS services connect in a data pipeline. |
+| **2** | **Self-Learning & Research** | **Fair / Good** | Researched IaC (CloudFormation), CloudWatch, and Alarms on my own. Even though I haven't mastered every detail yet, I now clearly understand what each service is meant to solve. |
+| **3** | **Proactiveness** | **Fair / Good** | Built and iterated on my `aws-data-pipeline` project independently across the internship weeks. |
+| **4** | **Discipline & Compliance** | **Average** | Followed standard office guidelines, check-in/check-out routines, and program milestones at an acceptable baseline. |
+| **5** | **Communication** | **Fair / Good** | Comfortable reaching out, asking questions, and connecting with fellow interns and community members. |
+| **6** | **Teamwork** | **Average** | Collaborated fine on general tasks and shared notes when needed, though I still need more experience working on larger end-to-end team projects. |
+| **7** | **Problem Solving** | **Fair / Good** | Debugged practical issues along the way while building the pipeline (IAM permissions, network conflicts, Airflow runtime issues, and CloudFormation cleanup). |
+| **8** | **Workshop Contribution** | **Fair / Good** | Contributed the core technical build from `aws-data-pipeline` into the 6-chapter Workshop (CloudFormation IaC, S3 → SQS → Airflow 3 → Redshift/dbt flow, DLQ/Alarm testing, cost estimate, and `$0` cleanup steps). |
 
 ---
 
-### Key Strengths & Post-Internship Growth Plan
-* **Key Strengths:** Strong systems thinking linking business metrics, Data Engineering rigor, and CloudOps/FinOps governance (Audit Ledger, Rollback, Least-Privilege IAM, automated CI testing).
-* **Areas for Continued Growth:** Deepening executive Data Storytelling and BI visualization skills, exploring real-time streaming workloads (Kinesis/MSK), and preparing for international AWS certifications (**AWS Certified Solutions Architect – Associate / Data Engineer – Associate**).
+### Strengths & Areas to Improve
+* **Strengths:** Adapting quickly to a new environment and connecting well with people during the FCAJ program.
+* **Areas to Improve:**
+  * My **Business Understanding** is still relatively weak; I still tend to focus more on the tools than on the underlying business problem.
+  * I am not yet fully fluent in owning a complete end-to-end Data Pipeline project smoothly from scratch, so I need more hands-on practice on additional projects after the internship.

@@ -15,16 +15,16 @@ pre: " <b> 4.1. </b> "
   - **Mr. Phong Pham** – Program Manager FCAJ
 - **Role:** Student Intern (Data & Analytics Track)
 
-### 📌 Event Overview & Topics
-- Opening ceremony of the Workforce Bootcamp internship program integrated with the Buildrathon initiative.
-- Keynote theme: *"Don't just learn Cloud & AI for knowledge — build real products, gain lifelong teammates, and make your mark in the tech world."*
-- Program guidelines briefing, graduation acceptance criteria, and specialized learning paths across Cloud, AI, and Data & Analytics.
-- Networking session with FCAJ mentors, CMC Global tech leads, and fellow learners within the AWS Study Group community.
+### 📌 Event Overview
+- Opening session of the Workforce Bootcamp internship combined with the Buildrathon kickoff.
+- Key message shared at the kickoff: *"Don't just learn Cloud & AI for knowledge — build real products, gain lifelong teammates, and make your mark in the tech world."*
+- Walkthrough of program rules, internship completion criteria, and track orientations (Cloud, AI, Data & Analytics).
+- Short networking time with FCAJ mentors, CMC Global leads, and other interns in AWS Study Group.
 
-### 💡 Personal Takeaways & Reflection
-* The Kickoff gave me a crystal-clear roadmap for the 12-week FCAJ internship: going beyond watching AWS tutorials to **building a real, well-architected, FinOps-governed solution backed by live execution evidence**.
-* The hands-on builder mindset shared by FCAJ mentors and CMC Global tech leads directly inspired me to commit to the **Data & Analytics** track and plan an end-to-end **AWS E-Commerce Modern Data Pipeline** as my flagship project.
-* Clarifying bilingual reporting standards, office discipline, and graduation milestones early allowed me to structure my weekly worklog and deliverables proactively from Week 1.
+### 💡 Takeaways & Personal Notes
+* The session made the 12-week expectations very clear: instead of just reading AWS documentation or clicking through tutorials, I need to build a working project, track costs properly, and back everything up with real run outputs.
+* Hearing from FCAJ mentors and CMC Global leads helped me decide early to focus on the **Data & Analytics** track and start scoping an end-to-end e-commerce data pipeline on AWS.
+* Knowing the bilingual report format, office rules, and mandatory milestones (3 blogs, 3 events, and final workshop) from Day 1 helped me plan my weekly worklogs without rushing at the end.
 
 ---
 

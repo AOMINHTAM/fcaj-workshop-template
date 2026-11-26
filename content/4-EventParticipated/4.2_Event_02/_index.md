@@ -10,15 +10,14 @@ pre: " <b> 4.2. </b> "
 - **Location:** Bitexco Financial Tower - 02 Hai Trieu, Ben Nghe Ward, District 1, Ho Chi Minh City
 - **Role:** Student Attendee (Data & Analytics Track)
 
-### 📌 Key Takeaways & Experience
-- **Exploring Emerging Tech Trends:** Attended keynote sessions and expert tech talks exploring groundbreaking perspectives on modern Cloud, AI, and Data technologies.
-- **Real-world Industry Insights:** Learned practical deployment lessons and architecture patterns shared by industry leaders, transforming innovative ideas into production-ready solutions.
-- **Community Networking:** Connected and engaged in meaningful discussions with AWS speakers, mentors, and fellow tech-enthusiast students within the AWS ecosystem.
-- **Career & Personal Growth:** Gained clarity on core skill sets required for modern Cloud and Data Engineering, drawing actionable inspiration to navigate the upcoming professional journey.
+### 📌 Event Content
+- **Getting Started with AWS:** Session sharing how beginners should approach AWS services step by step instead of trying to learn everything at once.
+- **Technical Sharing (Test Caching & Real Case Studies):** Walked through practical technical topics such as caching strategies in testing and how teams structure systems when moving from small demos to real workloads.
+- **Q&A and Networking:** Talked briefly with mentors and other students about common roadblocks when practicing on real AWS accounts (IAM permissions, billing worries, and debugging).
 
-### 💡 Personal Takeaways & Reflection
-* The event highlighted how production enterprises evaluate Cloud, AI, and Data architectures: shipping a working prototype is only the start—**Reliability, Least-Privilege Security, and FinOps Cost Optimization** define production readiness.
-* Discussions with AWS speakers and community mentors gave me concrete direction to evolve my Olist Data Pipeline from a manual baseline (V2) into an event-driven, CloudFormation-managed architecture in the following weeks.
+### 💡 Takeaways & Personal Notes
+* One thing that stood out to me was the reminder that getting a pipeline to run once is easy, whereas keeping permissions tight (least-privilege IAM), handling failures cleanly, and avoiding unexpected AWS charges take real discipline.
+* After this event, I decided not to stop at manual batch uploads in my Olist project (V2) and started looking into event-driven triggers (S3 → SQS) and CloudFormation IaC for the next iterations.
 
 ---
 

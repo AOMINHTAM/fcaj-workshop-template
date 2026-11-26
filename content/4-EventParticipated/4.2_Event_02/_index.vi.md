@@ -10,15 +10,14 @@ pre: " <b> 4.2. </b> "
 - **Địa điểm:** Bitexco Financial Tower - 02 Hải Triều, Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh
 - **Vai trò:** Học viên tham dự (Data & Analytics Track)
 
-### 📌 Nội dung & Trải nghiệm
-- **Khám phá xu hướng công nghệ:** Lắng nghe các bài phát biểu và phiên chia sẻ chuyên sâu từ các chuyên gia AWS về những góc nhìn mới và xu hướng công nghệ Cloud, AI và Data hiện đại.
-- **Kinh nghiệm thực chiến:** Tiếp thu bài học kinh nghiệm giải quyết bài toán thực tế từ ý tưởng đột phá đến kiến trúc vận hành hệ thống tại các doanh nghiệp.
-- **Kết nối cộng đồng:** Giao lưu, thảo luận trực tiếp cùng các diễn giả, mentor và cộng đồng sinh viên công nghệ, mở rộng mạng lưới quan hệ trong hệ sinh thái AWS.
-- **Định hướng phát triển:** Nhận diện những kỹ năng cốt lõi cần trau dồi, tìm kiếm cảm hứng học tập và định hình rõ nét lộ trình phát triển bản thân cho chặng đường nghề nghiệp Cloud / Data Engineering phía trước.
+### 📌 Nội dung tham dự
+- **Định hướng bắt đầu với AWS:** Phiên chia sẻ cách người mới nên tiếp cận hệ sinh thái AWS theo từng bước thay vì học dàn trải quá nhiều dịch vụ cùng lúc.
+- **Chia sẻ kỹ thuật (bộ nhớ đệm kiểm thử & kinh nghiệm triển khai):** Nghe các diễn giả trao đổi về một số bài toán kỹ thuật thực tế như caching khi kiểm thử và cách thiết kế hệ thống khi chuyển từ bản thử nghiệm sang vận hành thật.
+- **Hỏi đáp & Giao lưu:** Trao đổi nhanh với các anh mentor và các bạn học viên về những lỗi hay gặp khi mới thực hành trên tài khoản AWS thật (phân quyền IAM, kiểm soát bill và gỡ lỗi).
 
 ### 💡 Bài học rút ra & Cảm nhận cá nhân
-* Sự kiện mang lại góc nhìn sát thực tế về cách các doanh nghiệp triển khai Cloud, AI và Data ở quy mô vận hành (Production): yếu tố tạo nên khác biệt không chỉ là chạy được tính năng mà là **tính ổn định (Reliability), bảo mật phân quyền (Least-Privilege IAM) và tối ưu chi phí (Cost Optimization)**.
-* Trực tiếp lắng nghe và trao đổi cùng các chuyên gia giúp mình tự tin hơn khi nâng cấp dự án Olist Data Pipeline từ mức chạy batch cơ bản (V2) lên kiến trúc hướng sự kiện (Event-Driven) và CloudFormation IaC ở các tuần kế tiếp.
+* Điều mình nhớ nhất là khi làm hệ thống thật, chạy được một lần chưa đủ — quan trọng là phân quyền gọn đúng nhu cầu (Least-Privilege IAM), xử lý được lúc lỗi xảy ra và kiểm soát được chi phí phát sinh.
+* Sau buổi Community Day này, mình quyết định không dừng đồ án Olist Data Pipeline ở mức chạy thủ công (V2), mà tìm hiểu tiếp hướng kích hoạt theo sự kiện (S3 → SQS) và CloudFormation IaC cho các tuần sau.
 
 ---
 
