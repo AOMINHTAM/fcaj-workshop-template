@@ -143,66 +143,38 @@ a:hover {
   margin-bottom: 3rem !important;
 }
 
-/* Tables - Clean Grid for Daily Worklog */
+/* Tables - Minimalist Documentation Style */
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #cbd5e1 !important;
-  border-radius: 6px;
-  overflow: hidden;
-  margin: 1.15rem 0 1.5rem 0;
-  font-size: 0.94rem;
+  margin: 1.1rem 0 1.4rem 0;
+  font-size: 0.93rem;
+  background: #ffffff;
   table-layout: auto;
 }
 
 th {
-  background: #283e5b !important;
-  color: #ffffff !important;
+  background: #f8fafc !important;
+  color: #1e293b !important;
   font-weight: 600 !important;
-  padding: 0.7rem 0.9rem !important;
-  border: 1px solid #3b5374 !important;
+  padding: 0.6rem 0.85rem !important;
+  border: 1px solid #e2e8f0 !important;
+  border-bottom: 2px solid #cbd5e1 !important;
   text-align: left;
-  white-space: nowrap;
 }
 
 td {
-  padding: 0.65rem 0.9rem !important;
+  padding: 0.6rem 0.85rem !important;
   border: 1px solid #e2e8f0 !important;
   color: #2d3748;
   vertical-align: top;
-  line-height: 1.65;
+  line-height: 1.6;
+  overflow-wrap: break-word;
 }
 
-/* Column proportion tuning for 5-column Daily Worklog tables */
-table th:nth-child(1),
-table td:nth-child(1) {
-  white-space: nowrap;
-  text-align: center;
-  width: 1%;
-}
-
-table td:nth-child(2) {
-  min-width: 340px;
-  width: 54%;
-}
-
-table th:nth-child(3),
-table td:nth-child(3),
-table th:nth-child(4),
-table td:nth-child(4) {
-  white-space: nowrap;
-  text-align: center;
-  width: 1%;
-}
-
-table td:nth-child(5) {
-  width: 24%;
+td code {
+  white-space: normal !important;
   word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-tr:nth-child(even) td {
-  background-color: #f8fafc;
 }
 
 /* Code & Preformatted */
