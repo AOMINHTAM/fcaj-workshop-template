@@ -20,9 +20,9 @@ chapter: false
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Việt Nam
 
-&emsp; **Vị trí thực tập:** Cloud / Data Engineer Intern (Workforce Bootcamp - First Cloud AI Journey)
+&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày 26/09/2026 đến ngày 18/12/2026
+&emsp; **Thời gian thực tập:** Từ tháng 09/2026 đến tháng 12/2026
 
 ---
 

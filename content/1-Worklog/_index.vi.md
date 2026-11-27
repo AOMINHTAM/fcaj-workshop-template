@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Phần này ghi lại chi tiết lộ trình học tập, các tác vụ thực hành theo từng ngày và kết quả đạt được qua từng tuần trong chương trình **Workforce Bootcamp - First Cloud AI Journey (FCAJ)** (12 tuần, từ **26/09/2026** đến **18/12/2026**).
+Phần này ghi lại chi tiết lộ trình học tập, các tác vụ thực hành theo từng ngày và kết quả đạt được qua từng tuần trong chương trình **Workforce Bootcamp - First Cloud AI Journey (FCAJ)**.
 
 ### 📅 Danh mục Nhật ký theo tuần:
 

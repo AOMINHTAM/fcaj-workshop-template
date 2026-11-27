@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This section documents the weekly learning objectives, daily hands-on tasks, and key achievements throughout the 12-week **Workforce Bootcamp - First Cloud AI Journey (FCAJ)** program (from **26/09/2026** to **18/12/2026**).
+This section documents the weekly learning objectives, daily hands-on tasks, and key achievements throughout the **Workforce Bootcamp - First Cloud AI Journey (FCAJ)** program.
 
 ### 📅 Weekly Worklog Index:
 
