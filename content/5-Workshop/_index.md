@@ -10,7 +10,7 @@ This hands-on workshop provides a step-by-step, reproducible guide to building a
 
 * **100% Infrastructure as Code (AWS CloudFormation):** Declarative provisioning, static CI linting (`cfn-lint`), Native Auto-Rollback, and 1-command teardown (`make cfn-delete`).
 * **Pure Event-Driven & Fault-Tolerant ELT:** Amazon S3 Event Notifications → Amazon SQS Main Queue + Dead-Letter Queue (DLQ) → Apache Airflow 3 `AssetWatcher` → Amazon Redshift Serverless (4 RPUs) → dbt Core Kimball Star Schema.
-* **Observability, Audit & FinOps:** 4 Amazon CloudWatch Alarms + Amazon SNS Email alerts, the `ops.pipeline_ingestion_audit` ledger with Deterministic Safe ACK, and FinOps cost governance under `$2/month`.
+* **Observability, Audit & FinOps:** 4 Amazon CloudWatch Alarms + Amazon SNS Email alerts, the `ops.pipeline_ingestion_audit` ledger with Deterministic Safe ACK, and FinOps cost governance aligned with the AWS Pricing Calculator (`$3.51/month` list, `~$3.02/month` after Always Free).
 * **Reproducible Source Repository:** <https://github.com/AOMINHTAM/aws-data-pipeline>
 
 ---

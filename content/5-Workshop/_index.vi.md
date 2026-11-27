@@ -10,7 +10,7 @@ Bài Workshop này hướng dẫn chi tiết từng bước triển khai một *
 
 * **100% Infrastructure as Code (AWS CloudFormation):** Triển khai, kiểm thử tĩnh (`cfn-lint`), Native Auto-Rollback và dọn dẹp 1 lệnh (`make cfn-delete`).
 * **Pure Event-Driven & Fault-Tolerant ELT:** Amazon S3 Event Notifications → Amazon SQS Main Queue + Dead-Letter Queue (DLQ) → Apache Airflow 3 `AssetWatcher` → Amazon Redshift Serverless (4 RPUs) → dbt Core Kimball Star Schema.
-* **Observability, Audit & FinOps:** 4 Amazon CloudWatch Alarms + Amazon SNS Email, sổ cái kiểm toán `ops.pipeline_ingestion_audit` + Deterministic Safe ACK, và tối ưu chi phí vận hành dưới `$2/tháng`.
+* **Observability, Audit & FinOps:** 4 Amazon CloudWatch Alarms + Amazon SNS Email, sổ cái kiểm toán `ops.pipeline_ingestion_audit` + Deterministic Safe ACK, và tối ưu chi phí theo AWS Pricing Calculator (`$3.51/tháng`, còn `~$3.02/tháng` sau Always Free).
 * **Mã nguồn tái lập:** <https://github.com/AOMINHTAM/aws-data-pipeline>
 
 ---
